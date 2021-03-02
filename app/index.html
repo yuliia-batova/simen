@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SIMEN</title>
     <!-- <link type="image/x-icon" rel="shortcut icon" href="./images/favicon.ico" /> -->
     <link rel="stylesheet" href="css/style.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="header__top">
-            <div class="container">
-
-            </div>
+      <div class="header__top">
+        <div class="container">
+          <div class="header__settings">
+              <form class="header__settings-form">
+                <select class="header__language" name="language"
+                style="background-image: url(images/drop-down.png);">
+                <option class="header__language-list" value="English" selected><a class="header__language-link" href="#" >English</a></option>
+                <option class="header__language-list" value="Russian"><a class="header__language-link" href="#">Russian</a></option>
+                <option class="header__language-list" value="Ukrainian"><a class="header__language-link" href="#">Ukrainian</a></option>
+            </select>
+              <form class="header__settings-form">
+                <select class="header__currency" name="currency"
+                style="background-image: url(images/drop-down.png);">
+                <option class="header__currency-list"  value="USD" selected><a class="header__currency-link" href="#">USD</a></option>
+                <option class="header__currency-list" value="RUB"><a class="header__currency-link" href="#">RUB</a></option>
+                <option class="header__currency-list" value="UAH"><a class="header__currency-link" href="#">UAH</a></option>
+            </select>
+              </form>             
+          </div>
+          <div class="header__account">
+              <a href="#" class="header__account-my">My Account</a>
+              <a href="#" class="header__account-wishlist">My Wishlist</a>
+              <a href="#" class="header__account-checkout">Checkout</a>
+              <a href="#" class="header__account-login">Login</a>
+          </div>
         </div>
-        <div class="header__content">
-            <div class="container">
-                
-            </div>
-        </div>
-        <div class="header__menu">
-            <div class="container">
-                
-            </div>
-        </div>
+      </div>
+      <div class="header__content">
+        <div class="container"></div>
+      </div>
+      <div class="header__menu">
+        <div class="container"></div>
+      </div>
     </header>
-    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/libs.min.js"></script>    
+    <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
-</body>
+  </body>
 </html>
