@@ -16,14 +16,14 @@
           <div class="header__settings">
               <form class="header__settings-form">
                 <select class="header__language" name="language"
-                style="background-image: url(images/drop-down.png);">
+                style="background-image: url(images/caret-down.svg);">
                 <option class="header__language-list" value="English" selected><a class="header__language-link" href="#" >English</a></option>
                 <option class="header__language-list" value="Russian"><a class="header__language-link" href="#">Russian</a></option>
                 <option class="header__language-list" value="Ukrainian"><a class="header__language-link" href="#">Ukrainian</a></option>
             </select>
               <form class="header__settings-form">
                 <select class="header__currency" name="currency"
-                style="background-image: url(images/drop-down.png);">
+                style="background-image: url(images/caret-down.svg);">
                 <option class="header__currency-list"  value="USD" selected><a class="header__currency-link" href="#">USD</a></option>
                 <option class="header__currency-list" value="RUB"><a class="header__currency-link" href="#">RUB</a></option>
                 <option class="header__currency-list" value="UAH"><a class="header__currency-link" href="#">UAH</a></option>
@@ -31,10 +31,22 @@
               </form>             
           </div>
           <div class="header__account">
-              <a href="#" class="header__account-my">My Account</a>
-              <a href="#" class="header__account-wishlist">My Wishlist</a>
-              <a href="#" class="header__account-checkout">Checkout</a>
-              <a href="#" class="header__account-login">Login</a>
+              <a href="#" class="header__account-my">
+                <span class="icon-user header__account-icon"></span>
+                  My Account
+                </a>
+              <a href="#" class="header__account-wishlist">
+                <span class="icon-heart-o header__account-icon"></span>
+                  My Wishlist
+                </a>
+              <a href="#" class="header__account-checkout">
+                <span class="icon-check-square-o header__account-icon"></span>
+                  Checkout
+                </a>
+              <a href="#" class="header__account-login">
+                <span class="icon-key header__account-icon"></span>
+                  Login
+                </a>
           </div>
         </div>
       </div>

@@ -9,10 +9,10 @@
   @font-face {
     font-family: 'icomoon';
     src:  url('fonts/icomoon.eot?ytdy4n');
-    src:  url('fonts/icomoon.eot?ytdy4n#iefix') format('embedded-opentype'),
-      url('fonts/icomoon.ttf?ytdy4n') format('truetype'),
-      url('fonts/icomoon.woff?ytdy4n') format('woff'),
-      url('fonts/icomoon.svg?ytdy4n#icomoon') format('svg');
+    src:  url('../fonts/icomoon.eot') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf') format('truetype'),
+      url('../fonts/icomoon.woff') format('woff'),
+      url('../fonts/icomoon.svg') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -44,6 +44,10 @@
   }
   .icon-user:before {
     content: "\e903";
+  }
+
+  .icon-caret-down:before {
+    content: "\f0d7";
   }
   
   
