@@ -21,7 +21,7 @@
   [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
-    speak: never;
+    speak-as: never;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -47,6 +47,15 @@
   }
   .icon-caret-down:before {
     content: "\f0d7";
+  }
+  .icon-gift:before {
+    content: "\f06b";
+  }
+  .icon-truck:before {
+    content: "\f0d1";
+  }
+  .icon-cloud-upload:before {
+    content: "\f0ee";
   }
   
   

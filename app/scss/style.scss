@@ -2,11 +2,11 @@
 @import "_vars";
 @import "_global";
 
-.header {
+.header__top {
     background-color: $black;
 }
 
-.header__top {
+.header__top-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;    
@@ -25,6 +25,7 @@
     font-size: 13px;
     color: $grey;   
     // position: relative;  
+    outline: none;
 }
 
 .header__language {
@@ -36,6 +37,7 @@
 .header__currency {
     padding-right: 25px;
     padding-left: 9px;
+    text-transform: uppercase;
 }
 
 .header__account-link {
@@ -56,8 +58,39 @@
     }
 }
 
+.header__content-inner {
+    padding: 39px 0;
+}
+.header__content-inner,
+.header__policy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__policy-item {
+    max-width: 271px;
+    width: 100%;
+}
+
+.header__policy-title {
+    display: inline;
+}
+
+
+.header__policy-img {    
+    font-size: 16px;
+    line-height: 1.25;
+    color: $grey;
+    border-radius: 50%;
+    background-color: #e6e6e6;
+    padding: 13px;
+    transition: color .5s ease-in-out;
+    &:hover {
+        color: $red;
+    }
+}  
 
 
   
-
   
