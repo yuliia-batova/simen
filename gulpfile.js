@@ -78,6 +78,7 @@ function style() {
     ])
     .pipe(concat('libs.min.css'))      
     .pipe(dest('app/css'))
+    .pipe(browserSync.stream())
 }
 
 function build() {

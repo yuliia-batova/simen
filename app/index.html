@@ -11,39 +11,39 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__top">
         <div class="container">
+      <div class="header__top">        
           <div class="header__settings">
               <form class="header__settings-form">
                 <select class="header__language" name="language"
-                style="background-image: url(images/caret-down.svg);">
-                <option class="header__language-list" value="English" selected><a class="header__language-link" href="#" >English</a></option>
-                <option class="header__language-list" value="Russian"><a class="header__language-link" href="#">Russian</a></option>
-                <option class="header__language-list" value="Ukrainian"><a class="header__language-link" href="#">Ukrainian</a></option>
+                style="background-image: url(images/caret-down.png);">
+                <option class="header__language-list header__language-list--en" value="English" selected>English</option>
+                <option class="header__language-list header__language-list--ru" value="Russian">Russian</option>
+                <option class="header__language-list header__language-list--uk" value="Ukrainian">Ukrainian</option>
             </select>
               <form class="header__settings-form">
                 <select class="header__currency" name="currency"
-                style="background-image: url(images/caret-down.svg);">
-                <option class="header__currency-list"  value="USD" selected><a class="header__currency-link" href="#">USD</a></option>
-                <option class="header__currency-list" value="RUB"><a class="header__currency-link" href="#">RUB</a></option>
-                <option class="header__currency-list" value="UAH"><a class="header__currency-link" href="#">UAH</a></option>
+                style="background-image: url(images/caret-down.png);">
+                <option class="header__currency-list"  value="USD" selected>USD</option>
+                <option class="header__currency-list" value="RUB">RUB</option>
+                <option class="header__currency-list" value="UAH">UAH</option>
             </select>
               </form>             
           </div>
           <div class="header__account">
-              <a href="#" class="header__account-my">
-                <span class="icon-user header__account-icon"></span>
+              <a href="#" class="header__account-link header__account-link--my">
+                <span class="icon-user header__account-icon header__account-icon--user"></span>
                   My Account
                 </a>
-              <a href="#" class="header__account-wishlist">
+              <a href="#" class="header__account-link header__account-link--wishlist">
                 <span class="icon-heart-o header__account-icon"></span>
                   My Wishlist
-                </a>
-              <a href="#" class="header__account-checkout">
+                 </a>
+              <a href="#" class="header__account-link header__account-link--checkout">
                 <span class="icon-check-square-o header__account-icon"></span>
                   Checkout
                 </a>
-              <a href="#" class="header__account-login">
+              <a href="#" class="header__account-link header__account-link--login">
                 <span class="icon-key header__account-icon"></span>
                   Login
                 </a>
