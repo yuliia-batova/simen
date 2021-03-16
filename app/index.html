@@ -10,77 +10,171 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <header class="header">       
-      <div class="header__top">  
-        <div class="container">    
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
           <div class="header__top-inner">
-          <div class="header__settings">
+            <div class="header__settings">
               <form class="header__settings-form">
-                <select class="header__language" name="language"
-                style="background-image: url(images/caret-down.png);">
-                <option class="header__language-list header__language-list--en" value="English" selected>English</option>
-                <option class="header__language-list header__language-list--ru" value="Russian">Russian</option>
-                <option class="header__language-list header__language-list--uk" value="Ukrainian">Ukrainian</option>
-            </select>
+                <select
+                  class="header__language"
+                  name="language"
+                  style="background-image: url(images/caret-down.png)"
+                >
+                  <option
+                    class="header__language-list"
+                    value="English"
+                    selected
+                  >
+                    English
+                  </option>
+                  <option class="header__language-list" value="Russian">
+                    Russian
+                  </option>
+                  <option class="header__language-list" value="Ukrainian">
+                    Ukrainian
+                  </option>
+                </select>
+              </form>
               <form class="header__settings-form">
-                <select class="header__currency" name="currency"
-                style="background-image: url(images/caret-down.png);">
-                <option class="header__currency-list"  value="USD" selected>USD</option>
-                <option class="header__currency-list" value="RUB">RUB</option>
-                <option class="header__currency-list" value="UAH">UAH</option>
-            </select>
-              </form>             
-          </div>
-          <div class="header__account">
+                <select
+                  class="header__currency"
+                  name="currency"
+                  style="background-image: url(images/caret-down.png)"
+                >
+                  <option class="header__currency-list" value="USD" selected>
+                    USD
+                  </option>
+                  <option class="header__currency-list" value="RUB">RUB</option>
+                  <option class="header__currency-list" value="UAH">UAH</option>
+                </select>
+              </form>
+            </div>
+            <div class="header__account">
               <a href="#" class="header__account-link header__account-link--my">
-                <span class="icon-user header__account-icon header__account-icon--user"></span>
-                  My Account
-                </a>
-              <a href="#" class="header__account-link header__account-link--wishlist">
-                <span class="icon-heart-o header__account-icon"></span>
-                  My Wishlist
-                 </a>
-              <a href="#" class="header__account-link header__account-link--checkout">
-                <span class="icon-check-square-o header__account-icon"></span>
-                  Checkout
-                </a>
-              <a href="#" class="header__account-link header__account-link--login">
-                <span class="icon-key header__account-icon"></span>
-                  Login
-                </a>
+                <span
+                  class="icon-user icon icon--m header__account-icon"
+                ></span>
+                My Account
+              </a>
+              <a
+                href="#"
+                class="header__account-link header__account-link--wishlist"
+              >
+                <span class="icon-heart-o icon header__account-icon"></span>
+                My Wishlist
+              </a>
+              <a
+                href="#"
+                class="header__account-link header__account-link--checkout"
+              >
+                <span
+                  class="icon-check-square-o icon header__account-icon"
+                ></span>
+                Checkout
+              </a>
+              <a
+                href="#"
+                class="header__account-link header__account-link--login"
+              >
+                <span class="icon-key icon header__account-icon"></span>
+                Login
+              </a>
+            </div>
           </div>
-        </div>  
         </div>
-      </div>
       </div>
       <div class="header__content">
         <div class="container">
           <div class="header__content-inner">
-          <a class="logo" href="#">
-            <img src="images/logo.png" alt="logo">
-        </a>
-        <div class="header__policy">
-           <div class="header__policy-item">
-             <span class="icon-truck header__policy-img"></span>
-             <p class="header__policy-title">FREE DELIVERY WORLDWIDE</p>
-             <p class="header__policy-text">On order over $100</p>
-           </div>
-           <div class="header__policy-item">
-            <span class="icon-cloud-upload header__policy-img"></span>
-            <p class="header__policy-title">UP TO 20% OFF COSY LAYERS</p>
-            <p class="header__policy-text">Lorem ipsum dolor sit amet</p>
-           </div>
-           <div class="header__policy-item">
-            <span class="icon-gift header__policy-img"></span>
-            <p class="header__policy-title">Buy 1 get 1 free</p>
-            <p class="header__policy-text">On order over $100</p>
-           </div>
-        </div>
-      </div>
+            <div class="header__content-item header__content-item--logo">
+              <a class="logo" href="#">
+                <img src="images/logo.png" alt="logo" />
+              </a>
+            </div>
+            <div class="header__content-item header__content-item--delivery">
+              <span class="icon-truck icon icon--m header__policy-img"></span>
+              <span class="header__policy-title"
+                >FREE DELIVERY WORLDWIDE
+                <p class="header__policy-text">On order over $100</p>
+              </span>
+            </div>
+            <div class="header__content-item header__content-item--discount">
+              <span
+                class="icon-cloud-upload icon icon--m header__policy-img"
+              ></span>
+              <span class="header__policy-title">
+                UP TO 20% OFF COSY LAYERS
+                <p class="header__policy-text">Lorem ipsum dolor sit amet</p>
+              </span>
+            </div>
+            <div class="header__content-item header__content-item--pros">
+              <span class="icon-gift icon icon--m header__policy-img"></span>
+              <span class="header__policy-title">
+                Buy 1 get 1 free
+                <p class="header__policy-text">On order over $100</p>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="header__menu">
-        <div class="container"></div>
+        <div class="container">
+          <div class="header__menu-line"></div>
+          <div class="header__menu-inner">
+            <nav class="header__menu-nav">
+              <ul class="menu">
+                <li class="menu__item">
+                  <a href="#" class="menu__item-link">Home</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__item-link">Funiture</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__item-link">All products</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__item-link">Shop Mobile</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__item-link">Offer</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__item-link">Deal Blog</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__item-link">Contact us</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__item-link">Custom menu</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__menu-wrap">
+              <form class="header__search">
+                <label for="search-1" class="header__search-lbl">
+                  <span class="visually-hidden">Search</span>
+                </label>
+                <input
+                  class="header__search-input"
+                  id="search-1"
+                  name="header__search"
+                  type="search"
+                  required
+                />
+                <button class="header__search-btn" type="submit">
+                  <span class="icon-search icon icon--l"></span>
+                  <span class="visually-hidden">Go</span>
+                </button>
+              </form>
+              <a href="#" class="header__cart">
+                <span class="icon-shopping-cart icon icon--l"></span>
+                <span class="header__cart-calc">2</span>
+              </a>
+            </div>
+          </div>
+          <div class="header__menu-line"></div>
+        </div>
       </div>
     </header>
 

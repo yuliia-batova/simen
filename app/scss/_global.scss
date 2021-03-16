@@ -57,5 +57,18 @@ body {
     padding: 0 15px;
 }
 
+.icon {
+    color: $grey; 
+    &--m {               
+          font-size: 16px;        
+    }
+    &--l {
+        font-size: 20px;
+    }
+}
+
+.visually-hidden {
+    display: none;
+}
 
 

@@ -1,12 +1,13 @@
 const {src, dest, watch, parallel, series} = require('gulp');
 
 const sass = require('gulp-sass');
-const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
 const uglify = require('gulp-uglify-es').default;
+const concat = require('gulp-concat');
+const rename = require('gulp-rename');
+const del = require('del');
 const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
-const del = require('del');
 
 function browsersync() {
     browserSync.init({
@@ -21,20 +22,27 @@ function cleanDist() {
     return del('dist')
 }
 
-function images() {
-    return src('app/images/**/*')
-    .pipe(imagemin([
-            imagemin.gifsicle({interlaced: true}),
-            imagemin.mozjpeg({quality: 75, progressive: true}),
-            imagemin.optipng({optimizationLevel: 5}),
-            imagemin.svgo({
-                plugins: [
-                    {removeViewBox: true},
-                    {cleanupIDs: false}
-                ]
-            })
-    ]))
-    .pipe(dest('dist/images'))
+function scss() {
+    return src('app/scss/**/*.scss')
+    .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(concat('style.min.css'))
+    .pipe(autoprefixer({
+        overrideBrowserslist: ['last 10 version'],
+        grid: true
+    }))
+    .pipe(dest('app/css'))
+    .pipe(browserSync.stream())
+}
+
+function style() {
+    return src([
+        'node_modules/normalize.css/normalize.css',
+        'node_modules/slick-carousel/slick/slick.css',
+        'node_modules/magnific-popup/dist/magnific-popup.css'
+    ])
+    .pipe(concat('libs.min.css'))          
+    .pipe(dest('app/css'))
+    .pipe(browserSync.stream())
 }
 
 function scripts() {
@@ -56,45 +64,40 @@ function js() {
     .pipe(concat('libs.min.js'))    
     .pipe(uglify())
     .pipe(dest('app/js'))    
-}
-
-function scss() {
-    return src('app/scss/**/*.scss')
-    .pipe(sass({outputStyle: 'compressed'}))
-    .pipe(concat('style.min.css'))
-    .pipe(autoprefixer({
-        overrideBrowserslist: ['last 10 version'],
-        grid: true
-    }))
-    .pipe(dest('app/css'))
     .pipe(browserSync.stream())
 }
 
-function style() {
-    return src([
-        'node_modules/normalize.css/normalize.css',
-        'node_modules/slick-carousel/slick/slick.css',
-        'node_modules/magnific-popup/dist/magnific-popup.css'
-    ])
-    .pipe(concat('libs.min.css'))      
-    .pipe(dest('app/css'))
-    .pipe(browserSync.stream())
+function images() {
+    return src('app/images/**/*')
+    .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.mozjpeg({quality: 75, progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+            imagemin.svgo({
+                plugins: [
+                    {removeViewBox: true},
+                    {cleanupIDs: false}
+                ]
+            })
+    ]))
+    .pipe(dest('dist/images'))
 }
 
 function build() {
     return src([
+        'app/*.html',
         'app/css/*.min.css',
+        'app/js/*.min.js', 
         'app/fonts/**/*',
-        'app/js/*.min.js',        
-        'app/*.html'
+        'app/img/**/*.*'    
     ], {base: 'app'})
     .pipe(dest('dist'))
 }
 
-function watching() {
-    watch(['app/scss/**/*.scss'], scss);
-    watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
+function watching() {    
     watch(['app/*.html']).on('change', browserSync.reload);
+    watch(['app/scss/**/*.scss'], scss);
+    watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);       
 }
 
 exports.scss = scss;
