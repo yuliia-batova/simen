@@ -24,7 +24,7 @@
     cursor: pointer;
     appearance: none;
     font-size: 13px;
-    color: $grey;    
+    color: $grey;
     outline: none;
 }
 
@@ -60,11 +60,11 @@
 }
 .header__content-inner,
 .header__content-item {
-    display: flex;    
-    align-items: center;    
+    display: flex;
+    align-items: center;
 }
 
-.header__content-item {          
+.header__content-item {
     &--logo {
         padding-right: 138px;
     }
@@ -73,7 +73,7 @@
     }
     &--discount {
         padding-right: 56px;
-    }    
+    }
     &--pros {
         padding-right: 109px;
     }
@@ -121,7 +121,7 @@
 }
 
 .header__menu-inner,
-.header__menu-wrap {    
+.header__menu-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -132,35 +132,59 @@
     &__item {
         display: inline-block;
         & + & {
-            margin-left: 29px;
+            margin-left: 34px;
         }
     }
     &__link {
         font-weight: 600;
-        font-size: 15px;
-        line-height: 2.8;
+        font-size: 13px;
+        line-height: 1.5;
         text-transform: uppercase;
         color: $black;
-        transition: color,transform .5s;
+        transition: color 0.5s;
+        &--red {
+            color: $red;
+        }
         &:hover {
             color: $red;
-            transform: scale(1.2);
         }
     }
 }
 
 .header__search-input {
     border: none;
-    outline: 0;   
+    outline: 0;
+    max-width: 110px;
+    font-size: 13px;
+    line-height: 1.6;
 }
 
 .header__search-btn {
     background-color: $white;
-    border: none;  
-    padding-right: 14px;  
+    border: none;
+    margin-right: 14px;
+    cursor: pointer;
 }
 
 .header__cart {
     border-left: 1px solid $grey;
     padding-left: 14px;
+    padding-right: 10px;
 }
+
+.header__cart-calc {    
+    color: $red;   
+    margin-right: 6px; 
+}
+
+.header__cart-calc,
+.header__cart-items {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+  
+ 
+
+  

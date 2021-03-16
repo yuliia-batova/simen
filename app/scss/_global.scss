@@ -59,12 +59,15 @@ body {
 
 .icon {
     color: $grey; 
+    &--s {               
+          font-size: 14px;        
+    }
     &--m {               
           font-size: 16px;        
     }
-    &--l {
-        font-size: 20px;
-    }
+    // &--l {
+    //     font-size: 20px;
+    // }
 }
 
 .visually-hidden {
