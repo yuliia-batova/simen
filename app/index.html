@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SIMEN</title>
-    <!-- <link type="image/x-icon" rel="shortcut icon" href="./images/favicon.ico" /> -->
-    <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="stylesheet" href="css/style.min.css" />
+    <!-- <link type="image/x-icon" rel="shortcut icon" href="./images/favicon.ico" /> -->       
+    <link rel="stylesheet" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />    
   </head>
   <body>
     <header class="header">
@@ -151,33 +151,70 @@
               </ul>
             </nav>
             <div class="header__menu-wrap">
-              <form class="header__search">
-                <label for="search-1" class="header__search-lbl">
-                  <span class="visually-hidden">Search</span>
-                </label>
-                <input
-                  class="header__search-input"
-                  id="search-1"
-                  name="header__search"
-                  type="search"
-                  required
-                />
-                <button class="header__search-btn" type="submit">
-                  <span class="icon-search icon icon--s"></span>
-                  <span class="visually-hidden">Go</span>
-                </button>
-              </form>
+              <span class="icon-search icon icon--s"></span>
               <a href="#" class="header__cart">
-                <span class="icon-shopping-cart icon icon--s"></span>
+                <span
+                  class="icon-shopping-cart icon icon--s icon--active"
+                ></span>
                 <span class="header__cart-calc">2</span>
                 <span class="header__cart-items">( items )</span>
               </a>
             </div>
           </div>
+          <form class="header__search">
+            <label for="search-1" class="header__search-lbl">
+              <span class="visually-hidden">Search entire store here</span>
+            </label>
+            <input
+              class="header__search-input"
+              id="search-1"
+              name="header__search"
+              placeholder="Search entire store here ..."
+              type="search"
+              required
+            />
+            <button class="header__search-btn" type="submit">search</button>
+          </form>
           <div class="header__menu-line"></div>
         </div>
       </div>
     </header>
+    <main>
+      <section class="intro">
+        <div class="container">
+          <div class="intro__inner">
+            <div class="intro__slider">
+              <div class="intro__slider-item">
+                <img class="intro__slider-img" src="images/slider-1.jpg"
+                alt="">
+              </div>
+              <div class="intro__slider-item">
+                <img class="intro__slider-img" src="images/slider-2.jpg"
+                alt="">
+              </div>
+              <div class="intro__slider-item">
+                <img class="intro__slider-img" src="images/slider-3.jpg"
+                alt="">
+              </div>
+              <div class="intro__slider-item">
+                <img class="intro__slider-img" src="images/slider-4.jpg"
+                alt="">
+              </div>
+            </div>
+            <div class="intro__banner">
+              <img class="intro__banner-img intro__banner-img--m" src="images/banner-1.png"
+                alt="">
+                <div class="intro__banner-inner">
+                  <img class="intro__banner-img intro__banner-img--s" src="images/banner-2.jpeg"
+                alt="">
+                <img class="intro__banner-img intro__banner-img--s" src="images/banner-3.jpg"
+                alt="">
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
