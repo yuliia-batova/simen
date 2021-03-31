@@ -66,9 +66,12 @@ body {
     &--m {               
           font-size: 16px;        
     }
-    // &--l {
-    //     font-size: 20px;
-    // }
+    &--white {
+        color: $white;
+    }
+    &--active:hover {
+        color: $red;
+    }
 }
 
 .visually-hidden {

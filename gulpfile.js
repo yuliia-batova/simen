@@ -4,7 +4,6 @@ const sass = require("gulp-sass");
 const browserSync = require("browser-sync").create();
 const uglify = require("gulp-uglify-es").default;
 const concat = require("gulp-concat");
-const rename = require("gulp-rename");
 const del = require("del");
 const autoprefixer = require("gulp-autoprefixer");
 const imagemin = require("gulp-imagemin");
@@ -59,6 +58,7 @@ function js() {
     "node_modules/jquery/dist/jquery.min.js", 
      "node_modules/slick-carousel/slick/slick.min.js",
     "node_modules/magnific-popup/dist/jquery.magnific-popup.js",
+    'node_modules/mixitup/dist/mixitup.js',
   ])
     .pipe(concat("libs.min.js"))
     .pipe(uglify())
