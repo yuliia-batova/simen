@@ -300,14 +300,13 @@
     }
 }
 
-
 .latest__products {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.product {
+.product {    
     max-width: 218px;
 } 
 
@@ -317,13 +316,19 @@
     position: relative;
 }
 
+.product__img {
+    max-width: 216px;
+    min-height: 266px;
+    overflow: hidden;
+}
+
 .hover {
     position: absolute;
     z-index: 1;
     bottom: 0;
     left: 0;    
     height: 0;
-    background-color: transparent;      
+    background-color: $white;      
     overflow: hidden;
     transition: height 0.5s;
 }
@@ -401,7 +406,15 @@
     }    
 }
 
+.new__inner {    
+    display: flex;
+    justify-content: space-between;    
+    border: 1px solid $grey;
+}
 
+.new__inner-info {
+    width: 50%;
+}
 
 
 

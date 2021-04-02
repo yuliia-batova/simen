@@ -24,4 +24,6 @@ $(function () {
       easing: "ease-in-out",
     },
   });
+
+
 });
