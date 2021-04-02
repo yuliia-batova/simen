@@ -15,6 +15,13 @@ $(function () {
     autoplay: true,
     autoplaySpeed: 3000,
   });
-  var mixer = mixitup(".latest__products");
-  
+
+  var mixer = mixitup(".latest__products", {
+    load: {
+      filter: ".category-latest",
+    },
+    animation: {
+      easing: "ease-in-out",
+    },
+  });
 });
