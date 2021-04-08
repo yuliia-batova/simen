@@ -20,17 +20,23 @@ $(function () {
     load: {
       filter: ".category-latest",
     },
-    animation: {
-      easing: "ease-in-out",
-    },
-  });
-  var mixer = mixitup(".suggest__products", {
-    load: {
-      filter: ".category-officeChair",
+    selectors: {
+      control: ".latest__btn",
     },
     animation: {
       easing: "ease-in-out",
     },
   });
 
+  var mixitUp = mixitup(".suggest__products", {
+    load: {
+      filter: ".category-officeChair",
+    },
+    selectors: {
+      control: ".suggest__btn",
+    },
+    animation: {
+      easing: "ease-in-out",
+    },
+  });
 });
