@@ -24,5 +24,13 @@ $(function () {
       easing: "ease-in-out",
     },
   });
+  var mixer = mixitup(".suggest__products", {
+    load: {
+      filter: ".category-officeChair",
+    },
+    animation: {
+      easing: "ease-in-out",
+    },
+  });
 
 });
