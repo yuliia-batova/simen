@@ -40,4 +40,13 @@ $(function () {
     },
   }); 
 
+  $(".popular__slider-items").slick({
+    slidesToShow: 8,
+    adaptiveHeight: true,
+    arrows: true,
+    dots: false,
+    appendArrows: $('.popular__slider-arrows'),
+    prevArrow: '<button class="slick-arrow slick-prew"><span class="icon-long-arrow-left"></span></button>',
+    nextArrow: '<button class="slick-arrow slick-next"><span class="icon-long-arrow-right"></span></button>',
+  });
 });

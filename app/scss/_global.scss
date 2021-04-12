@@ -69,6 +69,9 @@ body {
     &--white {
         color: $white;
     }
+    &--red {
+        color: $red;
+    }
     &--active:hover {
         color: $red;
     }
@@ -76,6 +79,15 @@ body {
 
 .visually-hidden {
     display: none;
+}
+
+.heading {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1;
+    color: $black;
+    text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 
