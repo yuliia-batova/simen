@@ -38,5 +38,6 @@ $(function () {
     animation: {
       easing: "ease-in-out",
     },
-  });
+  }); 
+
 });
