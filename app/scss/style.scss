@@ -274,7 +274,7 @@
 
 .latest__category,
 .suggest__category {
-    margin-bottom: 15px;
+    margin-bottom: 15px;    
 }
 
 .suggest__btn,
@@ -513,16 +513,23 @@
     height: 100%;
 }
 
-.caption {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;       
-}
-
-.popular__slider-items {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  
+.popular__slider-arrows .slick-arrow,
+.posts__slider-arrows .slick-arrow {
+    width: 30px;
+    height: 30px;
+    background-color:transparent;
+    color: grey;
+    border: 1px solid $grey;
+    outline: 0;
+    cursor: pointer;
+    transition: background-color,border,color 0.5s;
+    &.slick-prew:hover,
+    &.slick-next:hover {
+        background-color: $red;
+        border: none;
+        color: $white;
+    }    
 }
 
 .popular__slider-item {
@@ -539,6 +546,10 @@
     border: 1px solid $grey;
     margin-right: 20px;
     cursor: pointer;
+    transition: border 0.5s;
+    &:hover {
+        border: 1px solid $red;
+    }
 }
 
 .popular__slider-desc {
@@ -547,4 +558,60 @@
 
 .popular__slider-title {
     padding-top: 5px;
+}
+
+.posts__slider {
+    padding-bottom: 50px;
+    border-bottom: 1px solid $grey;
+}
+
+.posts__slider-img {
+    max-width: 370px;
+    width: 100%;
+    height: 190px; 
+    object-fit: cover;
+    margin-bottom: 15px;  
+    cursor: pointer; 
+}
+
+.posts__slider-desc {
+    max-width: 370px;
+    display: flex;   
+     
+}
+
+.posts__slider-date {
+    border: 1px solid $grey;
+    max-height: 55px;
+    min-width: 50px;
+    margin-right: 20px;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600;
+    color: $black;
+    text-align: center;
+    padding: 8px;
+}
+
+.posts__slider-month {
+    font-weight: 400;
+    font-size: 12px;    
+}
+
+.posts__slider-author {       
+    color: $red;
+}
+.posts__slider-title {
+    margin: 10px 0; 
+    display: block; 
+    font-weight: 600; 
+    color: $black; 
+}
+
+.posts__slider-text {
+    text-align: justify;
+}
+
+.brands__slider {
+    padding: 50px 0 50px 50px;
 }

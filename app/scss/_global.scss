@@ -81,13 +81,27 @@ body {
     display: none;
 }
 
+
+.caption {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    margin-bottom: 30px;
+}
+
 .heading {
     font-weight: 600;
     font-size: 20px;
     line-height: 1;
     color: $black;
     text-transform: uppercase;
-    margin-bottom: 30px;
 }
 
+.line {    
+    background-image: url(../images/line-1.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    height: 1px;
+    width: 80%;  
+}
 
