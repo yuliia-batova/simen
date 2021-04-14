@@ -704,6 +704,10 @@
     width: 100%;
 }
 
+.footer__email {
+    margin-bottom: 15px;
+}
+
 .footer__subscribe-input {
     width: 100%;
     margin-bottom: 10px;
@@ -720,6 +724,10 @@
     border: none;
     padding: 11px 15px;
     cursor: pointer;
+    transition: background-color 0.5s;
+    &:hover {
+        background-color: $red;
+    }
 }
 
 .footer__bottom-inner {
