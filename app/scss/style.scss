@@ -290,10 +290,10 @@
     cursor: pointer;
     outline: 0;
     &:hover {
-        font-weight: 800;
+        font-weight: 600;
     }
     &.mixitup-control-active {
-        font-weight: 800;
+        font-weight: 600;
     }
 }
 
@@ -402,7 +402,7 @@
 .product__price {
     margin: 0;
     color: #515151;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 16px;
     line-height: 1.9;
     &--oldprice {
@@ -520,7 +520,7 @@
     width: 30px;
     height: 30px;
     background-color:transparent;
-    color: grey;
+    color:$grey;
     border: 1px solid $grey;
     outline: 0;
     cursor: pointer;
@@ -615,4 +615,120 @@
 
 .brands__slider {
     padding: 50px 0 50px 50px;
+}
+
+.footer__top {
+    background-color: $light-grey;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 54px 0;
+}
+
+.footer__contacts {
+    max-width: 220px;
+}
+
+.footer__title {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $black;
+    margin-bottom: 40px;
+}
+
+.footer__item {
+    margin-bottom: 24px;       
+}
+
+.footer__connection {
+    position: relative;
+    padding-left: 44px;  
+    transition: color,border-color 0.5s;   
+    &:hover .footer__icon {
+        color: $red;
+        border-color: $red;
+    }
+}
+
+.footer__icon {
+    position: absolute;
+    left: 0;  
+    border-radius: 50%;
+    background-color: $white;
+    margin-right: 8px;
+    border: 1px solid $black;    
+    font-size: 13px;
+    line-height: 1.8;    
+    &--addr {
+        padding: 6px 12px;
+    }
+    &--phone {
+        padding: 6px 12px;
+    }
+    &--mail {
+        padding: 6px 11px;
+    }
+}
+
+.footer__text {
+    color: $grey;
+    transition: color 0.5s;
+    cursor: pointer;
+    &:hover {
+        color: $red;        
+    }   
+    &--indent {
+        margin-bottom: 15px;
+    } 
+}
+
+.footer__list {
+    margin-bottom: 15px;   
+}
+
+.footer__link {
+    color: $grey;    
+    transition: color,transform 0.5s;
+    &:hover {
+        color: $red;
+        transform: translateX(5px);
+    }
+}
+
+.footer__newslette {
+    max-width: 270px;
+    width: 100%;
+}
+
+.footer__subscribe-input {
+    width: 100%;
+    margin-bottom: 10px;
+    line-height: 2.9;
+    outline: 0;    
+}
+
+.footer__subscribe-btn {
+    display: block;
+    background-color: $black;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    padding: 11px 15px;
+    cursor: pointer;
+}
+
+.footer__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 0;
+}
+
+.footer__bottom-img + .footer__bottom-img {
+    margin-left: 8px;
 }

@@ -4492,28 +4492,40 @@
               <div class="footer__contacts">
                 <p class="footer__title">Contact us</p>
                 <address class="footer__address">
-                  <div class="footer__text footer__connection">
-                    <span class="icon-home"></span>
-                    <span>8888 South Avenue Street, New York</span>
+                  <div class="footer__item footer__connection">
+                    <span
+                      class="icon icon-home footer__icon footer__icon--addr"
+                    ></span>
+                    <span class="footer__text"
+                      >8888 South Avenue Street, New York</span
+                    >
                   </div>
-                  <div class="footer__text footer__connection">
-                    <span class="icon-phone"></span>
-                    <a class="footer__connection-phone" href="tel:1234567896"
+                  <div class="footer__item footer__connection">
+                    <span
+                      class="icon icon-phone footer__icon footer__icon--phone"
+                    ></span>
+                    <a class="footer__text" href="tel:1234567896"
                       >(12) 3 456 7896</a
                     >
-                    <a class="footer__connection-phone" href="tel:1234567895"
+                    <a class="footer__text" href="tel:1234567895"
                       >(12) 3 456 7895</a
                     >
                   </div>
-                  <div class="footer__text footer__connection">
-                    <span class="icon-envelope"></span>
-                    <a class="footer__connection-mail" href="mailto:contact@simen.com">contact@simen.com</a>
-                    <a class="footer__connection-mail" href="mailto:info@simen.com">info@simen.com</a>
+                  <div class="footer__item footer__connection">
+                    <span
+                      class="icon icon-envelope footer__icon footer__icon--mail"
+                    ></span>
+                    <a class="footer__text" href="mailto:contact@simen.com"
+                      >contact@simen.com</a
+                    >
+                    <a class="footer__text" href="mailto:info@simen.com"
+                      >info@simen.com</a
+                    >
                   </div>
                 </address>
               </div>
-              <div class="footer__service">  
-                <p class="footer__title">Service</p>              
+              <div class="footer__service">
+                <p class="footer__title">Service</p>
                 <ul class="footer__menu">
                   <li class="footer__list">
                     <a class="footer__link" href="#">Prices & Currencies</a>
@@ -4529,7 +4541,7 @@
                   </li>
                   <li class="footer__list">
                     <a class="footer__link" href="#">FAQ's</a>
-                  </li>                  
+                  </li>
                 </ul>
               </div>
               <div class="footer__account">
@@ -4539,22 +4551,17 @@
                     <a class="footer__link" href="#">My account</a>
                   </li>
                   <li class="footer__list">
-                    <a class="footer__link" href="#"
-                      >Wishlist </a
-                    >
+                    <a class="footer__link" href="#">Wishlist </a>
                   </li>
                   <li class="footer__list">
                     <a class="footer__link" href="#">Order history</a>
-                  </li>
-                  <li class="footer__list">
-                    <a class="footer__link" href="#">Refund Policy</a>
                   </li>
                   <li class="footer__list">
                     <a class="footer__link" href="#">Specials</a>
                   </li>
                   <li class="footer__list">
                     <a class="footer__link" href="#">Gift vouchers</a>
-                  </li>                  
+                  </li>
                 </ul>
               </div>
               <div class="footer__info">
@@ -4564,36 +4571,31 @@
                     <a class="footer__link" href="#">My account</a>
                   </li>
                   <li class="footer__list">
-                    <a class="footer__link" href="#"
-                      >Wishlist </a
-                    >
+                    <a class="footer__link" href="#">Wishlist </a>
                   </li>
                   <li class="footer__list">
                     <a class="footer__link" href="#">Order history</a>
-                  </li>
-                  <li class="footer__list">
-                    <a class="footer__link" href="#">Refund Policy</a>
                   </li>
                   <li class="footer__list">
                     <a class="footer__link" href="#">Specials</a>
                   </li>
                   <li class="footer__list">
                     <a class="footer__link" href="#">Gift vouchers</a>
-                  </li>                  
+                  </li>
                 </ul>
               </div>
               <div class="footer__newslette">
                 <p class="footer__title">Newsletter</p>
-                <p class="footer__text footer__desc">
-                  Register your email for news 
+                <p class="footer__text footer__text--indent">
+                  Register your email for news
                 </p>
                 <form class="footer__subscribe">
-                  <label for="subscribe-1" class="footer__subscribe-lbl">
+                  <label for="subscribe" class="footer__subscribe-lbl">
                     <span class="visually-hidden">Enter email</span>
                   </label>
                   <input
                     class="footer__subscribe-input"
-                    id="subscribe-1"
+                    id="subscribe"
                     name="footer__subscribe"
                     type="text"
                     placeholder="Your email here"
@@ -4602,38 +4604,40 @@
                   <button class="footer__subscribe-btn" type="submit">
                     Subscribe
                   </button>
-                </form>                
+                </form>
               </div>
             </div>
           </div>
         </div>
         <div class="footer__bottom">
           <div class="container">
-            <p class="footer__bottom-text">
-              © 2015 Magento Demo Store. All Rights Reserved. Developed by
-              SNSTheme.Com
-            </p>
-            <div class="footer__bottom-peyment">
-              <img
-                class="footer__bottom-img"
-                src="images/paypal.png"
-                alt="PeyPal"
-              />
-              <img
-                class="footer__bottom-img"
-                src="images/mastercard.png"
-                alt="MasterCard"
-              />
-              <img
-                class="footer__bottom-img"
-                src="images/maestro.png"
-                alt="Maestro"
-              />
-              <img
-                class="footer__bottom-img"
-                src="images/visa.png"
-                alt="Visa"
-              />
+            <div class="footer__bottom-inner">
+              <p class="footer__bottom-text">
+                © 2015 Magento Demo Store. All Rights Reserved. Developed by
+                SNSTheme.Com
+              </p>
+              <div class="footer__bottom-peyment">
+                <img
+                  class="footer__bottom-img"
+                  src="images/paypal.png"
+                  alt="PeyPal"
+                />
+                <img
+                  class="footer__bottom-img"
+                  src="images/mastercard.png"
+                  alt="MasterCard"
+                />
+                <img
+                  class="footer__bottom-img"
+                  src="images/maestro.png"
+                  alt="Maestro"
+                />
+                <img
+                  class="footer__bottom-img"
+                  src="images/visa.png"
+                  alt="Visa"
+                />
+              </div>
             </div>
           </div>
         </div>
