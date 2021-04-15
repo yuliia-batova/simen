@@ -121,10 +121,6 @@
     height: 3px;
 }
 
-.header__menu-inner {
-    padding: 20px 0;
-}
-
 .header__menu-inner,
 .header__menu-wrap {
     display: flex;
@@ -143,7 +139,7 @@
     &__link {
         font-weight: 600;
         font-size: 13px;
-        line-height: 1.5;
+        line-height: 4.6;
         text-transform: uppercase;
         color: $black;
         transition: color 0.5s;
@@ -739,4 +735,73 @@
 
 .footer__bottom-img + .footer__bottom-img {
     margin-left: 8px;
+}
+
+.menu__item {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    z-index: 1;
+    background-color: $white;
+    top: 50px;
+    left: -74px;   
+}
+
+.dropdown {
+    display: flex;
+    padding: 0 30px;
+    transition: all .3s;
+    height: 0;
+    overflow: hidden;
+}
+
+.dropdown__box + .dropdown__box {
+    margin-left: 30px;
+}
+
+.dropdown__items {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.dropdown__item {
+    max-width: 256px;
+    width: 100%;
+    &+& {
+        margin-left: 25px;
+    }
+}
+
+.dropdown__title {
+    border-bottom: 1px solid $grey;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: $black;
+}
+
+.dropdown__img {
+    min-width: 540px;    
+    max-height: 120px;
+    object-fit: cover;
+    border: 1px solid $light-grey;    
+}
+
+.dropdown__link {
+    color: $grey;
+    line-height: 2.1;
+    transition: color 0.5s;
+    &:hover {
+        color: $red;
+    }
+}
+
+.menu__item-furniture:hover {
+    .dropdown {
+        height: auto;
+        padding: 30px;
+        border: 1px solid $grey; 
+    }
 }
