@@ -17,14 +17,14 @@
 .header__currency {
     min-height: 12px;
     padding-left: 21px;
+    font-size: 13px;
+    color: $grey;
     background-color: $black;
     background-repeat: no-repeat;
     background-position: right 14px center;
     border: none;
     cursor: pointer;
-    appearance: none;
-    font-size: 13px;
-    color: $grey;
+    appearance: none;   
     outline: none;
 }
 
@@ -41,14 +41,15 @@
 }
 
 .header__account-link {
-    font-size: 12px;
-    color: $grey;
+    position: relative;
     padding: 10px 14px 9px;
+    font-size: 12px;
+    color: $grey;    
     border-left: 1px solid $grey;
     &--login {
         border-right: 1px solid $grey;
     }
-    position: relative;
+    
 }
 
 .header__account-icon {
@@ -58,6 +59,7 @@
 .header__content-inner {
     padding: 36px 0;
 }
+
 .header__content-inner,
 .header__content-item {
     display: flex;
@@ -84,23 +86,23 @@
 }
 
 .header__policy-img {
-    line-height: 1.3;
-    border-radius: 50%;
-    background-color: #e6e6e6;
-    padding: 12px 13px;
     margin-right: 10px;
+    padding: 12px 13px;
+    line-height: 1.3;
+    background-color: #e6e6e6;   
+    border-radius: 50%;    
     transition: color 0.5s;
     &:hover {
         color: $red;
     }
 }
 
-.header__policy-title {
-    white-space: nowrap;
+.header__policy-title {    
     font-size: 14px;
     line-height: 1.4;
     text-transform: uppercase;
     color: $black;
+    white-space: nowrap;
 }
 
 .header__policy-text {
@@ -116,9 +118,9 @@
 }
 
 .header__menu-line {
-    background-image: url(../images/line-menu.jpg);
     display: block;
     height: 3px;
+    background-image: url(../images/line-menu.jpg);    
 }
 
 .header__menu-inner,
@@ -153,43 +155,42 @@
 }
 
 .header__search {
-    display: none;
-    padding: 20px 0;
     position: relative;
+    display: none;
+    padding: 20px 0;    
 }
 
-.header__search-input {
-    border: none;
-    outline: 0;
+.header__search-input {   
     width: 100%;
     font-size: 13px;
-    line-height: 1.6;
-    left: 0;
+    line-height: 1.6;     
+    border: none;
+    outline: 0;    
 }
 
 .header__search-btn {
-    background-color: $white;
-    border: 0;
-    border-left: 1px solid $grey;
-    margin-right: 14px;
-    cursor: pointer;
-    text-transform: uppercase;
-    color: $red;
-    font-weight: 600;
     position: absolute;
     right: 0;
+    margin-right: 14px;
+    font-weight: 600; 
+    text-transform: uppercase;
+    color: $red;    
+    background-color: $white;
+    border: 0;
+    border-left: 1px solid $grey;    
+    cursor: pointer;
 }
 
-.header__cart {
-    border-left: 1px solid $grey;
-    padding-left: 14px;
-    padding-right: 10px;
+.header__cart {    
     margin-left: 14px;
+    padding-right: 10px;
+    padding-left: 14px;
+    border-left: 1px solid $grey;
 }
 
 .header__cart-calc {
-    color: $red;
     margin-right: 6px;
+    color: $red;    
 }
 
 .header__cart-calc,
@@ -236,15 +237,15 @@
 }
 
 .intro__slider.slick-slider {
-    max-width: 570px;
-    max-height: 544px;
     position: relative;
+    max-width: 570px;
+    max-height: 544px;    
 }
 
 .intro__slider .slick-dots {
-    position: absolute;
-    bottom: 11px;
+    position: absolute;    
     left: 50%;
+    bottom: 11px;
     transform: translate(-50%, 0);
 }
 .intro__slider .slick-dots li {
@@ -253,19 +254,19 @@
 }
 
 .slick-dots .slick-active button {
-    font-size: 0;
     width: 14px;
     height: 14px;
+    font-size: 0;    
     background-image: url(../images/header-dots_active.png);
 }
 
 .slick-dots button {
-    font-size: 0;
-    border: none;
-    outline: 0;
     width: 14px;
     height: 14px;
+    font-size: 0;   
     background-image: url(../images/header-dots.png);
+    border: none;
+    outline: 0;
     cursor: pointer;
 }
 
@@ -276,15 +277,15 @@
 
 .suggest__btn,
 .latest__btn {
+    padding-right: 20px;
     font-size: 20px;
     line-height: 1;
     text-transform: uppercase;
     color: #515151;
     background-color: transparent;
     border: none;
-    padding-right: 20px;
-    cursor: pointer;
     outline: 0;
+    cursor: pointer;    
     &:hover {
         font-weight: 600;
     }
@@ -310,9 +311,9 @@
 }
 
 .product__content {
-    border: 1px solid $grey;
+    position: relative;    
     margin-bottom: 10px;
-    position: relative;
+    border: 1px solid $grey;
 }
 
 .product__img {    
@@ -329,9 +330,9 @@
 
 .hover {
     position: absolute;
-    z-index: 1;
-    bottom: 0;
     left: 0;
+    bottom: 0;
+    z-index: 1;   
     height: 0;
     background-color: $white;
     overflow: hidden;
@@ -345,12 +346,12 @@
     height: 70px;
 }
 
-.product__basket {    
+.product__basket {   
+    width: 100%;   
     font-size: 12px;
-    line-height: 2.8;    
-    border: none;
-    text-transform: uppercase;
-    width: 100%;    
+    line-height: 2.8;  
+    text-transform: uppercase;  
+    border: none;   
     cursor: pointer;
     &--white {
         color: $white;
@@ -397,10 +398,10 @@
 
 .product__price {
     margin: 0;
-    color: #515151;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.9;
+    color: #515151;
     &--oldprice {
         margin-left: 5px;
         font-weight: 400;
@@ -421,9 +422,9 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    border: 1px solid $grey;
     padding: 30px;
     margin-bottom: 50px;
+    border: 1px solid $grey;    
 }
 
 .novelty__inner-info {
@@ -439,23 +440,23 @@
 }
 
 .novelty__decs {
-    padding: 0 30px;
     margin-bottom: 50px;
+    padding: 0 30px;    
     text-align: justify;
     line-height: 2;
 }
 
 .novelty__btn {
-    text-transform: uppercase;
-    border: none;
+    padding: 0 25px;
     font-size: 13px;
     font-weight: 600;
     line-height: 2.8;
-    padding: 0 25px;
-    background-color: $black;
+    text-transform: uppercase;
+    border: none;
     color: $white;
+    background-color: $black;
     cursor: pointer;
-    transition: color, background-color 0.5s;
+    transition: background-color 0.5s;
     &:hover {
         background-color: $red;
     }
@@ -466,11 +467,11 @@
 }
 
 .suggest__btn {
-    border: 1px solid $grey;
-    padding: 0;
     max-width: 127px;
     width: 100%;
     min-height: 108px;
+    padding: 0;
+    border: 1px solid $grey;
     transition: border-color, color 0.5s;
     &:hover {
         border-color: $red;
@@ -484,9 +485,9 @@
 }
 
 .suggest__title {
-    font-size: 12px;
-    line-height: 2.5;
     margin: 0;
+    font-size: 12px;
+    line-height: 2.5;    
 }
 
 .promotions__items {
@@ -515,17 +516,17 @@
 .posts__slider-arrows .slick-arrow {
     width: 30px;
     height: 30px;
-    background-color:transparent;
     color:$grey;
+    background-color:transparent;    
     border: 1px solid $grey;
     outline: 0;
     cursor: pointer;
     transition: background-color,border,color 0.5s;
     &.slick-prew:hover,
     &.slick-next:hover {
-        background-color: $red;
-        border: none;
         color: $white;
+        background-color: $red;
+        border: none;        
     }    
 }
 
@@ -539,9 +540,9 @@
     border: none;
 }
 
-.popular__slider-img {    
-    border: 1px solid $grey;
-    margin-right: 20px;
+.popular__slider-img {  
+    margin-right: 20px;  
+    border: 1px solid $grey;    
     cursor: pointer;
     transition: border 0.5s;
     &:hover {
@@ -566,28 +567,27 @@
     max-width: 370px;
     width: 100%;
     height: 190px; 
-    object-fit: cover;
     margin-bottom: 15px;  
+    object-fit: cover;    
     cursor: pointer; 
 }
 
 .posts__slider-desc {
-    max-width: 370px;
-    display: flex;   
-     
+    display: flex;  
+    max-width: 370px;    
 }
 
 .posts__slider-date {
-    border: 1px solid $grey;
-    max-height: 55px;
     min-width: 50px;
+    max-height: 55px;
     margin-right: 20px;
+    padding: 8px;
+    font-weight: 600;
     font-size: 20px;
     line-height: 1;
-    font-weight: 600;
-    color: $black;
     text-align: center;
-    padding: 8px;
+    color: $black;
+    border: 1px solid $grey;
 }
 
 .posts__slider-month {
@@ -599,8 +599,8 @@
     color: $red;
 }
 .posts__slider-title {
-    margin: 10px 0; 
     display: block; 
+    margin: 10px 0; 
     font-weight: 600; 
     color: $black; 
 }
@@ -628,12 +628,12 @@
 }
 
 .footer__title {
+    margin-bottom: 40px;
     font-size: 16px;
     line-height: 1.2;
     font-weight: 600;
     text-transform: uppercase;
     color: $black;
-    margin-bottom: 40px;
 }
 
 .footer__item {
@@ -653,12 +653,12 @@
 .footer__icon {
     position: absolute;
     left: 0;  
-    border-radius: 50%;
-    background-color: $white;
     margin-right: 8px;
-    border: 1px solid $black;    
     font-size: 13px;
-    line-height: 1.8;    
+    line-height: 1.8; 
+    background-color: $white;
+    border-radius: 50%;
+    border: 1px solid $black;   
     &--addr {
         padding: 6px 12px;
     }
@@ -713,12 +713,12 @@
 
 .footer__subscribe-btn {
     display: block;
-    background-color: $black;
+    padding: 11px 15px;
+    font-weight: 600;
     color: $white;
     text-transform: uppercase;
-    font-weight: 600;
+    background-color: $black;
     border: none;
-    padding: 11px 15px;
     cursor: pointer;
     transition: background-color 0.5s;
     &:hover {
@@ -747,19 +747,21 @@
 
 .dropdown {
     position: absolute;
-    z-index: 1;
-    background-color: $white;
     top: 50px;
-    left: -74px;  
-    transition: all .3s;
+    left: -74px; 
+    z-index: 1;
     height: 0;
-    overflow: hidden;    
+    background-color: $white;
+    overflow: hidden; 
+    transition: all .3s;
     &__furniture {
         left: -74px; 
     }
     &__bedroom {
-        left: -386px;         
+        left: -386px;    
     }
+    
+    
 }
 
 .dropdown__boxs {
@@ -798,8 +800,7 @@
     }
 }
 
-.dropdown__img {  
-    // object-fit: cover;      
+.dropdown__img {      
     border: 1px solid $light-grey;   
     &--b {
         max-width: 540px;   
@@ -816,9 +817,9 @@
     }    
 }
 
-.dropdown__link {
-    color: $grey;
+.dropdown__link {    
     line-height: 2.1;
+    color: $grey;
     transition: color 0.5s;
     &:hover {
         color: $red;
@@ -835,7 +836,7 @@
 .menu__item-bedroom:hover {
     .dropdown {
         height: auto;
-        padding: 30px 15px;
+        padding: 60px 15px 30px;
         border: 1px solid $grey; 
     }
 }
