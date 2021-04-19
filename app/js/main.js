@@ -6,11 +6,7 @@ $(function () {
   $(".header__search").mouseout(function () {
     $(".header__search").hide();
     $(".header__menu-inner").show();
-  }); 
-  $(".header__search").mouseout(function () {
-    $(".header__search").hide();
-    $(".header__menu-inner").show();
-  });
+  });  
   $(".intro__slider").slick({
     dots: true,
     arrows: false,
