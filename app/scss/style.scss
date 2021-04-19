@@ -852,3 +852,19 @@
         border: 1px solid $grey;
     }
 }
+//end index.html
+
+//start furniture.html
+
+.breadcrumbs__list {
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+    padding-right: 5px;
+    & a::after {
+        content: "/";
+        position: absolute;
+        right: -5px;
+    }
+}
+
