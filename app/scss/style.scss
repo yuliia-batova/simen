@@ -247,6 +247,7 @@
     bottom: 11px;
     transform: translate(-50%, 0);
 }
+
 .intro__slider .slick-dots li {
     display: inline-block;
     margin-left: 10px;
@@ -306,7 +307,9 @@
 }
 
 .product {
-    max-width: 218px;
+    &--m {
+        max-width: 218px;
+    }
 }
 
 .product__content {
@@ -324,18 +327,18 @@
     font-size: 10px;
     line-height: 2;
     text-transform: uppercase;
-    color: $white;    
+    color: $white;
     &--new {
         left: -20px;
         background-color: $blue;
-        transform: rotate(-45deg);                      
+        transform: rotate(-45deg);
     }
     &--sale {
         right: -20px;
-        background-color: $red;        
+        background-color: $red;
         transform: rotate(45deg);
     }
-} 
+}
 
 .product__img {
     overflow: hidden;
@@ -346,6 +349,10 @@
     &--s {
         max-width: 100px;
         min-height: 115px;
+    }
+    &--xs {
+        max-width: 90px;
+        min-height: 105px;
     }
 }
 
@@ -363,6 +370,7 @@
 .product__hover {
     width: 218px;
 }
+
 .product__content:hover .product__hover {
     height: 70px;
 }
@@ -618,6 +626,7 @@
 .posts__slider-author {
     color: $red;
 }
+
 .posts__slider-title {
     display: block;
     margin: 10px 0;
@@ -780,9 +789,15 @@
     &__bedroom {
         left: -386px;
     }
+    &__cart {
+        top: 30px;
+        left: -148px;
+        max-width: 300px;
+    }
 }
 
-.dropdown__boxs {
+.dropdown__boxs,
+.dropdown__content {
     display: flex;
 }
 .dropdown__box + .dropdown__box,
@@ -838,6 +853,52 @@
     }
 }
 
+.dropdown__content {
+    border: none;
+}
+.dropdown__content-link {
+    margin-right: 10px;
+    border: 1px solid $grey;    
+}
+
+.dropdown__desc {
+    padding-right: 19px;
+}
+
+.dropdown__total {
+    margin: 0;
+    padding: 20px 0;
+    text-align: right;
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+}
+
+.dropdown__total-price {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.dropdown__product-chekout,
+.dropdown__product-cart {
+    display: block;
+    font-weight: 600;
+    line-height: 2.5;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid $grey;
+    color: $grey;
+    transition: color, background-color 0.5s;
+    &:hover {
+        color: $white;
+        background-color: $red;
+    }
+}
+
+.dropdown__product-chekout {
+    margin: 20px 0 10px;
+}
+
 .menu__item-furniture:hover {
     .dropdown {
         height: auto;
@@ -852,6 +913,18 @@
         border: 1px solid $grey;
     }
 }
+
+.header__menu-link {
+    position: relative;
+    &:hover {
+        .dropdown {
+            height: auto;
+            border: 1px solid $grey;
+            padding: 20px;
+        }
+    }
+}
+
 //end index.html
 
 //start furniture.html
@@ -867,4 +940,3 @@
         right: -5px;
     }
 }
-
