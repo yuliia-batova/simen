@@ -1038,3 +1038,14 @@
 .irs--flat .irs-single:before {
     display: none;
 }
+
+.furniture__inner {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.furniture__shop-img {
+    min-width: 870px;
+    max-height: 240px;
+    object-fit: cover;
+}
