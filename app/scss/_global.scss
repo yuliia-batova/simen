@@ -126,3 +126,17 @@ body {
         right: -5px;
     }
 }
+
+.button {
+    padding: 0 25px;    
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    color: $white;
+    background-color: $black;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    &:hover {
+        background-color: $red;
+    }
+}

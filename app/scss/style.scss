@@ -470,19 +470,8 @@
 }
 
 .novelty__btn {
-    padding: 0 25px;
     font-size: 13px;
-    font-weight: 600;
-    line-height: 2.8;
-    text-transform: uppercase;
-    border: none;
-    color: $white;
-    background-color: $black;
-    cursor: pointer;
-    transition: background-color 0.5s;
-    &:hover {
-        background-color: $red;
-    }
+    line-height: 2.8;    
 }
 
 .suggest__inner {
@@ -963,10 +952,10 @@
         line-height: 2.5;
         text-align: center;
         margin-right: 10px;
-    }  
+    }
     &--color {
         color: transparent;
-    }  
+    }
     &--red::before {
         background-color: $red;
     }
@@ -979,14 +968,14 @@
     &--green::before {
         background-color: $green;
     }
-    &+& {
+    & + & {
         margin-top: 8px;
     }
 }
 
 .category__link {
     color: $grey;
-    transition: color,font-size 0.5s;
+    transition: color, font-size 0.5s;
     &:hover {
         color: $red;
         font-size: 13px;
@@ -994,10 +983,58 @@
     }
 }
 
+.advertising {
+    margin-bottom: 30px;
+}
+
 .category__slider-items {
     padding-top: 20px;
 }
+.price__btn {
+    margin-top: 20px;
+    line-height: 2.5;
+}
 
-.advertising {
-    margin-bottom: 30px;
+.irs-min,
+.irs-max {
+    display: none;
+}
+.irs--flat .irs-line {
+    background-color: #eaeaea;
+    height: 6px;
+    border-radius: 0;
+}
+.irs--flat .irs-bar {
+    background-color: $red;
+    height: 6px;
+}
+
+.irs--flat .irs-handle {
+    top: 19px;
+    background-color: $white;
+    border: 3px solid $red;
+}
+
+.irs--flat .irs-handle > i:first-child {
+    display: none;
+}
+
+.irs-from,
+.irs-to,
+.irs-single {
+    top: 40px;
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+    background-color: transparent;
+    color: $red;
+    font-weight: 600;
+}
+
+.irs--flat .irs-from:before,
+.irs--flat .irs-to:before,
+.irs--flat .irs-single:before {
+    display: none;
 }
