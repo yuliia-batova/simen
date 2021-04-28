@@ -932,10 +932,16 @@
     margin-bottom: 30px;
     padding: 20px;
     border: 1px solid $grey;
+    &__caption {
+        margin-bottom: 20px;
+    }
 }
 
-.furniture__heading {
+.category__heading {
     margin: 0 0 20px 0;
+    &--best {
+        margin-bottom: 0;
+    }
 }
 
 .category__list {
@@ -986,6 +992,10 @@
         font-size: 13px;
         font-weight: 600;
     }
+}
+
+.category__slider-items {
+    padding-top: 20px;
 }
 
 .advertising {

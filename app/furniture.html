@@ -557,7 +557,7 @@
           <div class="container">
             <aside class="furniture__aside">
               <div class="category">
-                <h1 class="heading furniture__heading">all categories</h1>
+                <h1 class="heading category__heading">all categories</h1>
                 <span class="curly-line"></span>
                 <ol class="category__list">
                   <li class="category__list-item category__list-item--number">
@@ -565,25 +565,27 @@
                   </li>
                   <li class="category__list-item">
                     <a href="#" class="category__link">
-                      Living Room Furniture                      
+                      Living Room Furniture
                     </a>
                   </li>
                   <li class="category__list-item">
                     <a href="#" class="category__link">Television Stands</a>
                   </li>
                   <li class="category__list-item">
-                    <a href="#" class="category__link"
-                      >Bedroom Furniture</a>
+                    <a href="#" class="category__link">Bedroom Furniture</a>
                   </li>
                   <li class="category__list-item">
-                    <a href="#" class="category__link"
-                      >Coffee Tables</a>
+                    <a href="#" class="category__link">Coffee Tables</a>
                   </li>
                 </ol>
               </div>
-              <div class="category">
-                <h1 class="heading furniture__heading">Price</h1>
+              <div class="category price">
+                <h1 class="heading category__heading">Price</h1>
                 <span class="curly-line"></span>
+                <form class="price__form">
+                  <input type="text" class="js-range-slider" name="my_range" value="" />
+                  <button class="price__btn" type="submit">filter</button>
+                </form>
               </div>
               <div class="category">
                 <h1 class="heading">manufacturer</h1>
@@ -596,30 +598,35 @@
                     <a href="#" class="category__link">Living Room Furniture</a>
                   </li>
                   <li class="category__list-item">
-                    <a href="#" class="category__link"
-                      >Television Stands</a>
+                    <a href="#" class="category__link">Television Stands</a>
                   </li>
                   <li class="category__list-item">
-                    <a href="#" class="category__link"
-                      >Bedroom Furniture</a>
+                    <a href="#" class="category__link">Bedroom Furniture</a>
                   </li>
                 </ol>
               </div>
               <div class="category">
-                <h1 class="heading furniture__heading">colors</h1>
+                <h1 class="heading category__heading">colors</h1>
                 <span class="curly-line"></span>
                 <ul class="category__list">
-                  <li class="category__list-item category__list-item--color category__list-item--red">
+                  <li
+                    class="category__list-item category__list-item--color category__list-item--red"
+                  >
                     <a href="#" class="category__link">Red</a>
                   </li>
-                  <li class="category__list-item category__list-item--color category__list-item--yellow">
+                  <li
+                    class="category__list-item category__list-item--color category__list-item--yellow"
+                  >
                     <a href="#" class="category__link">Yellow</a>
                   </li>
-                  <li class="category__list-item category__list-item--color category__list-item--blue">
-                    <a href="#" class="category__link"
-                      >Blue</a>
+                  <li
+                    class="category__list-item category__list-item--color category__list-item--blue"
+                  >
+                    <a href="#" class="category__link">Blue</a>
                   </li>
-                  <li class="category__list-item category__list-item--color category__list-item--green">
+                  <li
+                    class="category__list-item category__list-item--color category__list-item--green"
+                  >
                     <a href="#" class="category__link">Green</a>
                   </li>
                 </ul>
@@ -635,12 +642,12 @@
               </div>
               <div class="popular category">
                 <div class="popular__slider">
-                  <div class="caption">
-                    <h1 class="heading furniture__heading">Best sell</h1>
+                  <div class="caption category__caption">
+                    <h1 class="heading category__heading category__heading--best">Best sell</h1>
                     <span class="popular__slider-arrows"></span>
                   </div>
                   <span class="curly-line"></span>
-                  <div class="popular__slider-items">
+                  <div class="category__slider-items">
                     <article class="product product--m popular__slider-item">
                       <div class="product__content popular__slider-content">
                         <a href="#" class="popular__slider-link">
@@ -1088,7 +1095,6 @@
             <div class="furniture__content"></div>
           </div>
         </section>
-
         <section class="brands">
           <div class="container">
             <div class="brands__slider">
