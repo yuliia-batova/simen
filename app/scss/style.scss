@@ -304,6 +304,9 @@
     &--m {
         max-width: 218px;
     }
+    &--l {
+        max-width: 274px;
+    }
 }
 
 .product__content {
@@ -336,6 +339,10 @@
 
 .product__img {
     overflow: hidden;
+    &--l {
+        max-width: 270px;
+        min-height: 320px;
+    }
     &--m {
         max-width: 216px;
         min-height: 266px;
@@ -361,8 +368,8 @@
     transition: height 0.5s;
 }
 
-.product__hover {
-    width: 218px;
+.product__hover {    
+    width: 100%;
 }
 
 .product__content:hover .product__hover {
@@ -471,7 +478,7 @@
 
 .novelty__btn {
     font-size: 13px;
-    line-height: 2.8;    
+    line-height: 2.8;
 }
 
 .suggest__inner {
@@ -1041,7 +1048,11 @@
 
 .furniture__inner {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
+}
+
+.furniture__shop {
+    margin-bottom: 20px;
 }
 
 .furniture__shop-img {
@@ -1049,3 +1060,68 @@
     max-height: 240px;
     object-fit: cover;
 }
+
+.furniture__filter {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $grey;    
+    margin-bottom: 20px;
+}
+
+.furniture__filter-btn {
+    width: 30px;
+    height: 30px;
+    background-color: $white;
+    border: 1px solid $grey;
+    &--active {
+        background-color: $red;
+        color: $white;
+        border: none;
+    }
+}
+
+.furniture__filter-select {
+    background-color: $white;
+    height: 30px;
+    outline: 0;
+    cursor: pointer;
+    padding: 4px;    
+}
+
+.furniture__products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid $grey;
+}
+
+.pagination {
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pagination__title {
+    margin-right: 15px;
+}
+
+.pagination__page {
+    display: inline-block;    
+    margin-right: 8px;
+    font-weight: 600;    
+    
+}
+
+.pagination__link {
+    transition: transform 0.5s;
+    &.active {
+        color: $red;
+    }
+    &:hover {
+        transform: scale(1.3);
+        color: $red;
+    }
+}
+
