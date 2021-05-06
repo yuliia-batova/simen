@@ -368,8 +368,11 @@
     transition: height 0.5s;
 }
 
-.product__hover {    
+.product__hover {
     width: 100%;
+    &--visibility {
+        display: none;
+    }
 }
 
 .product__content:hover .product__hover {
@@ -994,6 +997,21 @@
     margin-bottom: 30px;
 }
 
+.advertising__link {  
+    max-height: 270px;
+    border: 1px solid $grey;  
+    overflow: hidden;
+}
+
+.advertising__img {
+    transition: transform 0.5s;
+    &:hover {
+       transform: scale(1.2); 
+    }
+}
+
+    
+
 .category__slider-items {
     padding-top: 20px;
 }
@@ -1066,7 +1084,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid $grey;    
+    border-bottom: 1px solid $grey;
     margin-bottom: 20px;
 }
 
@@ -1075,7 +1093,7 @@
     height: 30px;
     background-color: $white;
     border: 1px solid $grey;
-    &--active {
+    &.active {
         background-color: $red;
         color: $white;
         border: none;
@@ -1087,7 +1105,7 @@
     height: 30px;
     outline: 0;
     cursor: pointer;
-    padding: 4px;    
+    padding: 4px;
 }
 
 .furniture__products {
@@ -1095,6 +1113,50 @@
     justify-content: space-between;
     flex-wrap: wrap;
     border-bottom: 1px solid $grey;
+}
+
+.product__desc-text {
+    display: none;
+}
+
+.product {
+    &.list {
+        max-width: none;
+        width: 100%;
+        display: flex;
+        .product__content {
+            min-width: 202px;
+        }
+        .product__img {
+            max-width: 202px;
+            min-height: 240px;
+        }
+        .product__desc {
+            padding-left: 20px;
+            text-align: left;
+        }
+        .product__desc-text {
+            display: block;
+        }
+        .hover {
+            display: none;
+        }
+        .product__hover--visibility {
+            display: flex;
+            justify-content: flex-start;
+        }
+        .product__basket {
+            max-width: 170px;
+            margin-right: 10px;
+        }
+        .product__info {
+            max-width: 102px;
+            border: 1px solid $grey;
+        }
+        .product__info-btn {
+            min-width: 34px;
+        }
+    }
 }
 
 .pagination {
@@ -1108,10 +1170,9 @@
 }
 
 .pagination__page {
-    display: inline-block;    
+    display: inline-block;
     margin-right: 8px;
-    font-weight: 600;    
-    
+    font-weight: 600;
 }
 
 .pagination__link {
@@ -1124,4 +1185,3 @@
         color: $red;
     }
 }
-

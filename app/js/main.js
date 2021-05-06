@@ -13,7 +13,7 @@ $(function () {
     autoplay: true,
     autoplaySpeed: 3000,
   });
-  
+
   $(".popular__slider-items").slick({
     slidesToShow: 4,
     rows: 2,
@@ -51,7 +51,7 @@ $(function () {
   $(".js-range-slider").ionRangeSlider({
     type: "double",
     min: 0,
-    max: 1000, 
+    max: 1000,
     from: 0,
     to: 1000,
   });
@@ -70,6 +70,16 @@ $(function () {
       '<button class="slick-arrow slick-prew"><span class="icon-long-arrow-left"></span></button>',
     nextArrow:
       '<button class="slick-arrow slick-next"><span class="icon-long-arrow-right"></span></button>',
+  });
+  $(".icon-list").on("click", function () {
+    $(".product").addClass("list");
+    $(".icon-list").addClass("active");
+    $(".icon-th").removeClass("active");
+  });
+  $(".icon-th").on("click", function () {
+    $(".product").removeClass("list");
+    $(".icon-list").removeClass("active");
+    $(".icon-th").addClass("active");
   });
   var mixer = mixitup(".latest__products", {
     load: {
