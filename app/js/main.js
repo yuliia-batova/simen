@@ -81,6 +81,14 @@ $(function () {
     $(".icon-list").removeClass("active");
     $(".icon-th").addClass("active");
   });
+
+  $('.header__account-btn').on('click', function(){
+    $('.header__account').slideToggle();
+  });
+  $('.header__menu-btn').on('click', function(){
+    $('.header__menu .menu').slideToggle();
+  });
+
   var mixer = mixitup(".latest__products", {
     load: {
       filter: ".category-latest",

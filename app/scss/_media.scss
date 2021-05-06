@@ -1,4 +1,55 @@
+@media (max-width: 1199px) {
+    .header__content-inner {
+        justify-content: space-between;
+    }
+    .header__content-item {
+        padding-right: 0;
+    }    
+}
 @media (max-width: 1050px) {
+    .header__menu-btn {
+        display: block;
+    }
+    .header__menu .menu {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        max-width: 250px;
+        height: 100vh;
+        background-color: #222;
+        padding: 15px;
+    }
+    .header__menu .menu__item {
+        display: block;        
+        margin: 0;
+        padding: 5px 0;   
+        border-bottom: 1px solid $grey;           
+    }
+    .header__menu .menu__link {
+        font-weight: 400;
+        color: $light-grey; 
+        font-size: 12px;    
+        line-height: 1; 
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .footer__inner {
         flex-wrap: wrap;
         justify-content: space-around;                
@@ -16,7 +67,10 @@
     } 
 }
 
-@media (max-width: 867px) {    
+@media (max-width: 867px) {   
+    .header__policy-title {
+        display: none;        
+    } 
     .footer__inner {
         flex-wrap: wrap;
         justify-content: space-between;
@@ -47,8 +101,35 @@
     }     
              
 }
+
 @media (max-width: 767px) {        
-              
+    .header__account-btn {
+        display: block;
+    }
+    .header__account {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        top: 34px;        
+        right: 0;        
+        background-color: #fff;
+        border: 1px solid $grey;
+    }
+    .header__account-link {
+        display: block;
+        margin: 0;
+        padding-bottom: 5px;
+        max-width: 130px;  
+        border: none;   
+        transition: color 0.5s;
+        &:hover {
+            color: $red;
+        }           
+    }       
+    
+    .header__content-inner {
+        padding: 15px 0;
+    }
 }
 
 @media (max-width: 575px) {        
@@ -82,6 +163,12 @@
     }
     .footer__subscribe {
         width: 100%;
+    }
+       
+}
+@media (max-width: 370px) {        
+    .header__content-item--visibility {
+        display: none;
     }
        
 }
