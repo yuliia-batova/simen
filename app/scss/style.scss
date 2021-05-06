@@ -213,7 +213,12 @@
     position: relative;
 }
 
+.into__banner-link {
+    overflow: hidden;
+}
+
 .intro__banner-img {
+    transition: transform 1s;
     &--m {
         max-width: 570px;
         max-height: 277px;
@@ -224,7 +229,7 @@
         max-height: 257px;
     }
     &:hover {
-        border: 1px solid $red;
+        transform: scale(1.1);
         cursor: pointer;
     }
 }
@@ -517,20 +522,28 @@
     justify-content: space-between;
     margin-bottom: 40px;
 }
+    
 
 .promotions__item {
-    height: 300px;
+    height: 300px;     
+    overflow: hidden;
+    cursor: pointer;
     &--m {
         max-width: 570px;
     }
     &--s {
         max-width: 270px;
-    }
+    }    
 }
+
 
 .promotions__img {
     width: 100%;
     height: 100%;
+    transition: transform 0.5s;
+    &:hover {
+        transform: scale(1.05); 
+     }
 }
 
 .popular__slider-arrows .slick-arrow,
