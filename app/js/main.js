@@ -98,12 +98,38 @@ $(function () {
     if (!$(e.target).closest(".header__menu-nav").length) {
       $(".header__menu .menu").animate(
         {
-          left: "-250px",
+          left: "-200px",
         },
         200
       );
     }
   });
+
+  $(".menu__item-furniture .menu__link").on("click", function () {
+    $(".dropdown__furniture").slideToggle();
+  });
+  $(".menu__item-bedroom .menu__link").on("click", function () {
+    $(".dropdown__bedroom").slideToggle();
+  });
+  $(".dropdown__title-slideone").on("click", function () {
+    $(".dropdown__wrapp-slideone").slideToggle();
+  });
+  $(".dropdown__title-slidetwo").on("click", function () {
+    $(".dropdown__wrapp-slidetwo").slideToggle();
+  });
+  $(".dropdown__title-slidethree").on("click", function () {
+    $(".dropdown__wrapp-slidethree").slideToggle();
+  });
+  $(".dropdown__title-slidefour").on("click", function () {
+    $(".dropdown__wrapp-slidefour").slideToggle();
+  });
+  
+
+
+
+
+
+
 
   var mixer = mixitup(".latest__products", {
     load: {
