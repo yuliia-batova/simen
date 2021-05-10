@@ -82,11 +82,27 @@ $(function () {
     $(".icon-th").addClass("active");
   });
 
-  $('.header__account-btn').on('click', function(){
-    $('.header__account').slideToggle();
+  $(".header__account-btn").on("click", function () {
+    $(".header__account").slideToggle();
   });
-  $('.header__menu-btn').on('click', function(){
-    $('.header__menu .menu').slideToggle();
+  $(".header__menu-btn").on("click", function () {
+    $(".header__menu .menu").animate(
+      {
+        left: "0px",
+      },
+      200
+    );
+  });
+
+  $(document).on("click", function (e) {
+    if (!$(e.target).closest(".header__menu-nav").length) {
+      $(".header__menu .menu").animate(
+        {
+          left: "-250px",
+        },
+        200
+      );
+    }
   });
 
   var mixer = mixitup(".latest__products", {
