@@ -108,9 +108,6 @@ $(function () {
   $(".menu__item-furniture .menu__link").on("click", function () {
     $(".dropdown__furniture").slideToggle();
   });
-  $(".menu__item-bedroom .menu__link").on("click", function () {
-    $(".dropdown__bedroom").slideToggle();
-  });
   $(".dropdown__title-slideone").on("click", function () {
     $(".dropdown__wrapp-slideone").slideToggle();
   });
@@ -123,14 +120,11 @@ $(function () {
   $(".dropdown__title-slidefour").on("click", function () {
     $(".dropdown__wrapp-slidefour").slideToggle();
   });
+  $(".menu__item-bedroom .menu__link").on("click", function () {
+    $(".dropdown__bedroom").slideToggle();
+  });
   
-
-
-
-
-
-
-
+  
   var mixer = mixitup(".latest__products", {
     load: {
       filter: ".category-latest",
