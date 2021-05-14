@@ -6,6 +6,8 @@
     .header__content-item {
         padding-right: 0;
     }
+
+       
 }
 
 @media (max-width: 1050px) {
@@ -47,7 +49,8 @@
         }
     }
 
-    .dropdown {
+    .dropdown .dropdown__furniture,
+    .dropdown .dropdown__bedroom {
         position: static;
         background-color: transparent;
     }
@@ -61,7 +64,6 @@
     }
 
     .dropdown__boxs,
-    .dropdown__content,
     .dropdowm__items-link {
         display: block;
     }

@@ -791,28 +791,29 @@
     margin-left: 8px;
 }
 
-.menu__item {
+.header__menu-inner {
     position: relative;
+    
 }
+
 
 .menu__link {
     font-weight: 600;
 }
 
-.dropdown {
-    position: absolute;
-    top: 50px;
-    left: -74px;
+.dropdown {          
+    position: absolute;       
+    top: 50px;   
     z-index: 1;
-    height: 0;
+    height: 0;   
     background-color: $white;
     overflow: hidden;
-    transition: all 0.3s;
+    transition: all 0.3s;    
     &__furniture {
-        left: -74px;
-    }
+        left: 0px;
+    }    
     &__bedroom {
-        left: -386px;
+        left: 0px;
     }
     &__cart {
         top: 30px;
@@ -835,14 +836,14 @@
     margin-bottom: 30px;
 }
 .dropdown__item {
-    max-width: 256px;
-    width: 100%;
+    max-width: 256px;   
+    width: 100%; 
     & + & {
         margin-left: 25px;
     }
 }
 
-.dropdown__title {
+.dropdown__title {    
     font-size: 16px;
     line-height: 1.3;
     font-weight: 600;
@@ -853,14 +854,22 @@
     }
 }
 
+.dropdown__furniture .dropdowm__items-link {
+    max-width: 560px;  
+}
+.dropdown__bedroom .dropdowm__items-link {
+    max-width: 255px;  
+}
+
 .dropdown__img {
     border: 1px solid $light-grey;
+    object-fit: cover;
     &--b {
-        max-width: 540px;
-        height: 120px;
+        width: 100%; 
+        height: 120px;    
     }
     &--m {
-        max-width: 255px;
+        width: 100%;
         height: 150px;
         transition: transform 0.3s;
         &:hover {
@@ -871,6 +880,7 @@
 
 .dropdown__link {
     line-height: 2.1;
+    white-space: nowrap;
     color: $grey;
     transition: color 0.5s;
     &:hover {
