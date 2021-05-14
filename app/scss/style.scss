@@ -792,10 +792,8 @@
 }
 
 .header__menu-inner {
-    position: relative;
-    
+    position: relative;    
 }
-
 
 .menu__link {
     font-weight: 600;
@@ -941,6 +939,7 @@
         border: 1px solid $grey;
     }
 }
+
 .menu__item-bedroom:hover {
     .dropdown {
         height: auto;

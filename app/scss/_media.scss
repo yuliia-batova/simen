@@ -5,9 +5,7 @@
 
     .header__content-item {
         padding-right: 0;
-    }
-
-       
+    }       
 }
 
 @media (max-width: 1050px) {
@@ -39,20 +37,24 @@
             line-height: 1;
             color: $light-grey;            
         }
+    }    
+    .dropdown {
+        position: static;
+        background-color: transparent;
+        
+    }
+
+    .dropdown__title {
+        cursor: pointer;
     }
 
     .menu__item-furniture:hover,
     .menu__item-bedroom:hover {
         .dropdown {
+            height: none;
             padding: 0;
             border: none;
         }
-    }
-
-    .dropdown .dropdown__furniture,
-    .dropdown .dropdown__bedroom {
-        position: static;
-        background-color: transparent;
     }
 
     .dropdown__furniture,
