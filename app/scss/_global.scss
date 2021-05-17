@@ -110,7 +110,12 @@ body {
     background-repeat: repeat;
     background-position: center;
     height: 1px;
-    width: 80%;
+    &--l {
+        width: 80%;
+    }
+    &--m {
+        width: 70%;
+    }
 }
 
 .breadcrumbs {

@@ -566,7 +566,8 @@
 }
 
 .popular__slider-arrows .slick-arrow,
-.posts__slider-arrows .slick-arrow {
+.posts__slider-arrows .slick-arrow,
+.related-product__slider-arrows .slick-arrow {
     width: 30px;
     height: 30px;
     color: $grey;
@@ -1226,5 +1227,17 @@
 }
 
 //end furniture.html
+
+//start product-one.html
+
+.related-product__slider {
+    border-bottom: 1px solid $grey;
+}
+
+.related-product__slider-items .product {
+    margin-right: 20px;
+}
+
+//end product-one.html
 
 @import "_media";

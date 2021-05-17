@@ -70,7 +70,7 @@ $(function () {
       '<button class="slick-arrow slick-prew"><span class="icon-long-arrow-left"></span></button>',
     nextArrow:
       '<button class="slick-arrow slick-next"><span class="icon-long-arrow-right"></span></button>',
-  });
+  });  
   $(".icon-list").on("click", function () {
     $(".product").addClass("list");
     $(".icon-list").addClass("active");
@@ -124,6 +124,18 @@ $(function () {
     $(".dropdown__bedroom").slideToggle();
   });
   
+  $(".related-product__slider-items").slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    adaptiveHeight: true,
+    arrows: true,
+    dots: false,
+    appendArrows: $(".related-product__slider-arrows"),
+    prevArrow:
+      '<button class="slick-arrow slick-prew"><span class="icon-long-arrow-left"></span></button>',
+    nextArrow:
+      '<button class="slick-arrow slick-next"><span class="icon-long-arrow-right"></span></button>',
+  });
   
   var mixer = mixitup(".latest__products", {
     load: {
