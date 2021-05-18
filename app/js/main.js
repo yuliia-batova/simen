@@ -12,7 +12,7 @@ $(function () {
     arrows: false,
     autoplay: true,
     autoplaySpeed: 3000,
-  });
+  });  
 
   $(".popular__slider-items").slick({
     slidesToShow: 4,
@@ -70,7 +70,7 @@ $(function () {
       '<button class="slick-arrow slick-prew"><span class="icon-long-arrow-left"></span></button>',
     nextArrow:
       '<button class="slick-arrow slick-next"><span class="icon-long-arrow-right"></span></button>',
-  });  
+  });
   $(".icon-list").on("click", function () {
     $(".product").addClass("list");
     $(".icon-list").addClass("active");
@@ -123,7 +123,25 @@ $(function () {
   $(".menu__item-bedroom .menu__link").on("click", function () {
     $(".dropdown__bedroom").slideToggle();
   });
-  
+ 
+  $(".product-one__for").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: ".product-one__nav",
+  });
+  $(".product-one__nav").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: ".product-one__for",  
+    focusOnSelect: true,
+    prevArrow:
+      '<button class="slick-arrow slick-prew"><span class="icon-long-arrow-left"></span></button>',
+    nextArrow:
+      '<button class="slick-arrow slick-next"><span class="icon-long-arrow-right"></span></button>',
+  });
+
   $(".related-product__slider-items").slick({
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -136,7 +154,7 @@ $(function () {
     nextArrow:
       '<button class="slick-arrow slick-next"><span class="icon-long-arrow-right"></span></button>',
   });
-  
+
   var mixer = mixitup(".latest__products", {
     load: {
       filter: ".category-latest",
@@ -159,5 +177,5 @@ $(function () {
     animation: {
       easing: "ease-in-out",
     },
-  });
+  });  
 });
