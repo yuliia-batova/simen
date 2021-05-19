@@ -142,6 +142,13 @@ $(function () {
       '<button class="slick-arrow slick-next"><span class="icon-long-arrow-right"></span></button>',
   });
 
+  $(".rate").rateYo({
+    rating: 4.4,
+    starWidth: "16px",
+    readOnly: true,
+    spacing: "2px",
+  });
+
   $(".down").on("click", function () {
     var $input = $(this).parent().find("input");
     var count = parseInt($input.val()) - 1;
