@@ -1315,6 +1315,37 @@
     padding-bottom: 22px;
 }
 
+.product__one-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .product__basket {
+        margin-right: 20px;
+    }
+    .product__info{
+        border: 1px solid $grey; 
+        & .product__info-btn {        
+            min-width: 35px;
+            height: 35px;
+        }
+    }
+}
+
+.product__one-num {
+    display: flex;
+    margin-right: 20px;
+}
+
+.quant {  
+    text-align: center;
+    font-size: 16px; 
+    line-height: 2.1; 
+    width: 35px;
+    height: 35px;
+    border: 1px solid $grey;   
+    cursor: pointer; 
+}
+
 .product-one__aside {
     max-width: 270px;
 }
