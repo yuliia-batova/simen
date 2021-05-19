@@ -1351,6 +1351,43 @@
     cursor: pointer; 
 }
 
+.tabs {
+    margin-bottom: 20px;
+    
+}
+
+.tab {
+    width: 230px;
+    border: 1px solid $grey;
+    padding: 15px;
+    &.active {
+        color: $white;
+        background-color: $black;
+    }
+}
+
+.tab-item__table {
+    width: 100%;
+    border-collapse:collapse; 
+}
+
+.tab-item__td {
+    border: 1px solid $grey;
+    
+}
+
+.tab-item__text {    
+    padding: 8px 10px;
+    margin: 0;
+    &--width {
+        width: 25%;
+    }
+    &--black {
+        font-weight: 600;
+        color: $black;
+    }
+}
+
 .product-one__aside {
     max-width: 270px;
 }

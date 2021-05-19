@@ -164,6 +164,20 @@ $(function () {
     return false;
   });
 
+  $(".product-one__content-bottom .tab").on("click", function (event) {
+    var id = $(this).attr("data-id");
+    $(".product-one__content-bottom")
+      .find(".tab-item")
+      .removeClass("active-tab")
+      .hide();
+    $(".product-one__content-bottom .tabs").find(".tab").removeClass("active");
+    $(this).addClass("active");
+    $("#" + id)
+      .addClass("active-tab")
+      .fadeIn();
+    return false;
+  });
+
   $(".related-product__slider-items").slick({
     slidesToShow: 4,
     slidesToScroll: 4,
