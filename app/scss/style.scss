@@ -1300,7 +1300,7 @@
     margin-bottom: 10px;
 }
 
-.product-one__rate.jq-ry-container {      
+.rate.jq-ry-container {      
     padding: 0;
 }
 
@@ -1352,17 +1352,34 @@
 }
 
 .tabs {
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
     
 }
 
 .tab {
-    width: 230px;
+    max-width: 230px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
     border: 1px solid $grey;
     padding: 15px;
     &.active {
         color: $white;
         background-color: $black;
+    }
+}
+
+.tab__content {
+    padding: 20px;
+    border: 1px solid $grey;
+}
+
+.tab-item {
+    display: none;
+    &:first-child {
+        display: block;
     }
 }
 
@@ -1376,7 +1393,7 @@
     
 }
 
-.tab-item__text {    
+.tab-item__text {       
     padding: 8px 10px;
     margin: 0;
     &--width {
@@ -1386,13 +1403,65 @@
         font-weight: 600;
         color: $black;
     }
+    &--pad {
+        padding: 0;
+    }
+}
+
+.tab-item__review .tab-item__text {
+    padding: 8px 0;
+}
+
+.tab-item__title {
+    text-transform: uppercase;
+}
+
+.tab-item__text-space {
+    display: block;
+}
+
+.tab-item__text-rating {
+    margin-bottom: 8px;
+}
+
+.tab-item__review-input {
+    width: 100%;
+    min-height: 75px;
+    outline: none;
+}
+input {
+    width: 30%;
+    padding: 8px 10px;
+    outline: none;    
+}
+
+.tab-item__email {
+    margin-bottom: 20px;
+}
+
+.tab-item-btn {
+    padding: 8px 25px;
+    text-transform: uppercase;
+    background-color: $black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    &:hover {
+        background-color: $red;
+
+    }
+}
+
+.tab__content-text {
+    text-align: justify;
 }
 
 .product-one__aside {
     max-width: 270px;
 }
 
-.related-product__slider {
+.related-product__slider {    
     border-bottom: 1px solid $grey;
 }
 

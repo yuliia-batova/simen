@@ -142,7 +142,7 @@ $(function () {
       '<button class="slick-arrow slick-next"><span class="icon-long-arrow-right"></span></button>',
   });
 
-  $(".rate").rateYo({
+  $(".product-one__rate").rateYo({
     rating: 4.4,
     starWidth: "16px",
     readOnly: true,
@@ -176,6 +176,11 @@ $(function () {
       .addClass("active-tab")
       .fadeIn();
     return false;
+  });
+
+  $(".tab-item__rate").rateYo({   
+    starWidth: "16px",    
+    spacing: "2px",
   });
 
   $(".related-product__slider-items").slick({

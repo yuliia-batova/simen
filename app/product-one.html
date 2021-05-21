@@ -774,9 +774,9 @@
                       >
                       <span class="tab" data-id="3">Reviews (0)</span>
                     </div>
-                    <div class="tab_content">
+                    <div class="tab__content">
                       <div class="tab-item active-tab" id="1">
-                        <p class="tab__conent-text">
+                        <p class="tab__content-text">
                           Lorem Ipsum is simply dummy text of the printing and
                           typesetting industry. Lorem Ipsum has been the
                           industry's standard dummy text ever since the 1500s,
@@ -790,7 +790,7 @@
                           software like Aldus PageMaker including versions of
                           Lorem Ipsum.
                         </p>
-                        <p class="tab__conent-text">
+                        <p class="tab__content-text">
                           Contrary to popular belief, Lorem Ipsum is not simply
                           random text. It has roots in a piece of classical
                           Latin literature from 45 BC, making it over 2000 years
@@ -807,7 +807,7 @@
                           line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
                           comes from a line in section 1.10.32.
                         </p>
-                        <p class="tab__conent-text">
+                        <p class="tab__content-text">
                           The standard chunk of Lorem Ipsum used since the 1500s
                           is reproduced below for those interested. Sections
                           1.10.32 and 1.10.33 from "de Finibus Bonorum et
@@ -820,24 +820,98 @@
                         <table class="tab-item__table">
                           <tr class="tab-item__tr">
                             <td class="tab-item__td">
-                              <p class="tab-item__text tab-item__text--width tab-item__text--black">Color</p>
+                              <p
+                                class="
+                                  tab-item__text
+                                  tab-item__text--width
+                                  tab-item__text--black
+                                "
+                              >
+                                Color
+                              </p>
                             </td>
                             <td class="tab-item__td">
-                              <p class="tab-item__text">Blue, Red, Green, Yellow</p>
+                              <p class="tab-item__text">
+                                Blue, Red, Green, Yellow
+                              </p>
                             </td>
                           </tr>
                           <tr class="tab-item__tr">
                             <td class="tab-item__td">
-                              <p class="tab-item__text tab-item__text--black">Manufacturer</p>
+                              <p class="tab-item__text tab-item__text--black">
+                                Manufacturer
+                              </p>
                             </td>
                             <td class="tab-item__td">
-                              <p class="tab-item__text">Sofas & Couches, Living Room Furniture, Television Stands, Bedroom Furniture</p>
+                              <p class="tab-item__text">
+                                Sofas & Couches, Living Room Furniture,
+                                Television Stands, Bedroom Furniture
+                              </p>
                             </td>
                           </tr>
                         </table>
-                      </div>                      
-                      <div class="tab-item" id="3">
-
+                      </div>
+                      <div class="tab-item tab-item__review" id="3">
+                        <p class="tab-item__title">REVIEWS</p>
+                        <p class="tab-item__text">There are no reviews yet.</p>
+                        <p class="tab-item__text">
+                          Be the first to review “Modular Modern” 
+                          <span class="tab-item__text-space">Your email
+                            address will not be published. Required fields are
+                            marked *</span>
+                        </p>                        
+                        <div class="tab-item__text-rating">
+                          <p class="tab-item__text">Your rating</p>
+                          <span class="rate tab-item__rate"></span>
+                        </div>
+                        <div class="tab-item__review">
+                          <p class="tab-item__text">Your review *</p>
+                          <form class="tab-item__form">
+                            <label for="review" class="tab-item__review-lbl">
+                              <span class="visually-hidden">Enter review</span>
+                            </label>
+                            <input
+                              class="tab-item__review-input"
+                              id="review"
+                              name="tab-item__review"
+                              type="text"
+                              required
+                            />
+                          </form>
+                        </div>
+                        <div class="tab-item__name">
+                          <p class="tab-item__text">Name *</p>
+                          <form class="tab-item__form">
+                            <label for="name" class="tab-item__name-lbl">
+                              <span class="visually-hidden">Enter name</span>
+                            </label>
+                            <input
+                              class="tab-item__name-input"
+                              id="name"
+                              name="tab-item__name"
+                              type="text"
+                              required
+                            />
+                          </form>
+                        </div>
+                        <div class="tab-item__email">
+                          <p class="tab-item__text">Email *</p>
+                          <form class="tab-item__form">
+                            <label for="email" class="tab-item__email-lbl">
+                              <span class="visually-hidden">Enter email</span>
+                            </label>
+                            <input
+                              class="tab-item__email-input"
+                              id="email"
+                              name="tab-item__email"
+                              type="text"
+                              required
+                            />
+                          </form>
+                        </div>
+                        <button class="tab-item-btn" type="submit">
+                          submit
+                        </button>
                       </div>
                     </div>
                   </div>
