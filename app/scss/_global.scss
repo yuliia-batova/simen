@@ -157,22 +157,23 @@ body {
     }
 }
 
-.post__img {    
+.post__img {        
     &--s {
         max-width: 60px;
         width: 100%;
         height: 60px;
+        cursor: pointer;
     }
     &--m {
         max-width: 370px;
         width: 100%;
         height: 190px;
+        cursor: pointer;
     }
     &--l {
         max-width: 870px;
         width: 100%;
         height: 440px;
     }
-    object-fit: cover;
-    cursor: pointer;
+    object-fit: cover;    
 }
