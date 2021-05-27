@@ -721,7 +721,8 @@
     }
 }
 
-.footer__text {
+.footer__text,
+.contact__col-text {
     color: $grey;
     transition: color 0.5s;
     cursor: pointer;
@@ -1533,5 +1534,56 @@ input {
 }
 
 //end blog.html
+
+//start contact-us.html
+
+.contact__box {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 0;
+}
+
+.contact__form {
+    display: flex;
+    .contact__col + .contact__col {
+        margin-left: 30px;
+    }
+}
+
+.contact__col {
+    max-width: 370px;
+    width: 100%;
+    display: block;
+}
+
+.contact__col-text {
+    padding-left: 10px;
+    
+}
+
+.contact__text {
+    margin-bottom: 20px;
+}
+
+.contact__info-item {
+    margin-bottom: 10px;
+}
+
+.contact__input {    
+    width: 100%;
+    margin-bottom: 20px;
+    min-height: 40px;
+    &--comment {
+        min-height: 100px;
+        margin-bottom: 14px;
+    }        
+}
+
+.contact__btn {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+//end contact-us.html
 
 @import "_media";
