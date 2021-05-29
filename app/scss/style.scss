@@ -1632,4 +1632,79 @@ input {
     line-height: 1.2;
 }
 
+//end 404.html
+
+//start shopping-cart.html
+
+.shopping-cart {
+    &--border {
+        border:1px solid $grey;
+    }
+}
+
+.shopping-cart__table {
+    border-spacing: 0; 
+    border-collapse: collapse;   
+    width: 100%;    
+}
+
+.shopping-cart__item {
+    border: 1px solid $grey;
+    text-align: center;
+    .product__one-num { 
+        display: inline-flex;
+    }   
+    .shopping-cart__link {
+        transition: color 0.5s;
+        &:hover {
+            color: $red;
+        }
+    }
+    .product__price {
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .product__price-subtotal {
+        font-weight: 600;
+        font-size: 14px;
+    }
+}
+
+.shopping-cart__th {
+    text-transform: uppercase;
+    padding: 12px;
+}
+
+.shopping-cart__border {
+    border: 1px solid $grey;
+}
+
+.shopping-cart__title {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600;
+    color: $black;
+}
+
+.shopping-cart__caption {
+    background-color: $light-grey;
+}
+
+.shopping-cart__actions {
+    position: relative;
+    padding: 12px;
+}
+
+
+
+.shopping-cart__btn {
+    padding: 10px;
+    &--update {
+        position: absolute;
+        right: 12px;
+    }    
+}
+
+
+
 @import "_media";
