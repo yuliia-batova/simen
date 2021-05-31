@@ -196,6 +196,10 @@ $(function () {
       '<button class="slick-arrow slick-next"><span class="icon-long-arrow-right"></span></button>',
   });
 
+  $(".shopping-cart__text-address").on("click", function () {
+    $(".shopping-cart__address").slideToggle();
+  });
+
   var mixer = mixitup(".latest__products", {
     load: {
       filter: ".category-latest",
