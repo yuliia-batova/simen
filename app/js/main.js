@@ -200,6 +200,10 @@ $(function () {
     $(".shopping-cart__address").slideToggle();
   });
 
+  $(".checkout__link-btn").on("click", function () {
+    $(".checkout__link .login").slideToggle();
+  });
+
   var mixer = mixitup(".latest__products", {
     load: {
       filter: ".category-latest",
