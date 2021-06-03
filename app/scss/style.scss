@@ -1713,63 +1713,57 @@ input {
     border: 3px solid $red;
     padding: 20px;
     margin-bottom: 30px;
-    width: 50%;
-    .shopping-cart__title {
-        margin-top: 0;
-    }
-    .shopping-cart__table {
-        border-color: none;    
-        margin-bottom: 20px;    
-    }
-
-    .shopping-cart__items .shopping-cart__th {
-        vertical-align: top;
-        width: 30%;
-    }
-    
-    .shopping-cart__item,
-    .shopping-cart__th {
-        text-align: start;
-    }
-    .shopping-cart__list-item {
-        display: block;
-        position: relative;
-        padding-left: 20px;
-    }
-
-    .shopping-cart__shipping {
-        padding: 20px 20px 20px 0;
-    }
-
-    .shopping-cart__text-address {
-        cursor: pointer;
-        transition: color 0.5s;
-        &:hover {
-            color:$red;
-        }
-    }
-
-    .shopping-cart__address {
-        display: none;
-    }
-    .shopping-cart__country {
-        margin-bottom: 20px;
-        width: 100%;
-        padding: 7px 8px;
-    }
-    .shopping-cart__input {
-        display: block;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .shopping-cart__list-input {
-        width: 8%;
-        position: absolute;
-        top: 3px;
-        left: -5px;
-    }
+    width: 50%;    
  }
+
+ .shopping-cart__title {
+    margin-top: 0;
+}
+.shopping-cart__table {
+    border-color: none;    
+    margin-bottom: 20px;    
+}
+
+.shopping-cart__items .shopping-cart__th {
+    vertical-align: top;
+    width: 30%;
+}
+
+.shopping-cart__item,
+.shopping-cart__th {
+    text-align: start;
+}
+.shopping-cart__list-item {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+}
+
+.shopping-cart__shipping {
+    padding: 20px 20px 20px 0;
+}
+
+.shopping-cart__text-address {
+    cursor: pointer;
+    transition: color 0.5s;
+    &:hover {
+        color:$red;
+    }
+}
+
+
+.shopping-cart__input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.shopping-cart__list-input {
+    width: 20px;
+    position: absolute;
+    top: 3px;
+    left: -5px;
+}
 
  .shopping-cart__text-country {
      font-weight: 600;
@@ -1778,6 +1772,15 @@ input {
  //end shopping-cart.html
  
  //start checkout.html
+
+ .checkout {
+    .requisite__input,
+    .country {
+        display: block;
+        width: 50%;
+        margin-bottom: 20px;
+    }
+ }
  
  .checkout__title {
      margin-top: 0; 
@@ -1804,7 +1807,7 @@ input {
      transition: color 0.5s;
      &:hover {
          color: $red;
-     }
+     }   
  } 
 
  .checkout__login,
@@ -1829,7 +1832,22 @@ input {
      padding: 8px 20px;
  }
 
+ .checkout__title {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.create-account__input {
+    width: 25px;
+} 
  
+ .checkout__password {
+     display: none;
+ }
+
+ .checkout__btn {
+     padding: 8px 15px;
+ }
  
 
  //end checkout.html

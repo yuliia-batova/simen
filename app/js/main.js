@@ -206,6 +206,9 @@ $(function () {
   $(".checkout__link-btn--code").on("click", function () {
     $(".checkout__coupon").slideToggle();
   });
+  $(".checkout__link-btn--password").on("click", function () {
+    $(".checkout__password").slideToggle();
+  });
 
   var mixer = mixitup(".latest__products", {
     load: {
