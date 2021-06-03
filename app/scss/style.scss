@@ -1774,12 +1774,17 @@ input {
  //start checkout.html
 
  .checkout {
+     margin-bottom: 20px;
     .requisite__input,
     .country {
         display: block;
         width: 50%;
         margin-bottom: 20px;
     }
+ }
+
+ .checkout__requisite {
+     margin-bottom: 20px;
  }
  
  .checkout__title {
@@ -1807,7 +1812,7 @@ input {
      transition: color 0.5s;
      &:hover {
          color: $red;
-     }   
+     }       
  } 
 
  .checkout__login,
@@ -1829,6 +1834,7 @@ input {
  }
 
  .login__btn {
+     display: block;
      padding: 8px 20px;
  }
 
@@ -1837,7 +1843,8 @@ input {
     text-transform: uppercase;
 }
 
-.create-account__input {
+.create-account__input,
+.remember__input {
     width: 25px;
 } 
  
@@ -1849,8 +1856,16 @@ input {
      padding: 8px 15px;
  }
  
-
  //end checkout.html
+
+ //start login.html 
+
+ .remember__input {
+     margin-bottom: 15px;
+ }
+
+
+ //end login.html
 
 
 @import "_media";
