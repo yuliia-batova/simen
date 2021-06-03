@@ -666,15 +666,15 @@
                     <span class="checkout__link-question"
                       >Returning customer?</span
                     >
-                    <span class="checkout__link-btn">Click here to login</span>
+                    <span class="checkout__link-btn checkout__link-btn--login">Click here to login</span>
                   </p>
-                  <div class="login">
-                    <p class="login__text">
+                  <div class="checkout__login">
+                    <p class="checkout__text">
                       If you have shopped with us before, please enter your
                       details below. If you are a new customer, please proceed
                       to the Billing & Shipping section.
                     </p>
-                    <form class="login__form">
+                    <form class="login">
                       <label for="email" class="login__email">
                         <span class="visually-hidden">Enter email</span>
                         <input
@@ -705,10 +705,34 @@
                   <p class="checkout__link-text">
                     <span class="icon icon-calendar checkout__link-icon"></span>
                     <span class="checkout__link-question"
-                      >Returning customer?</span
+                      >Have a coupon?</span
                     >
-                    <span class="checkout__link-btn">Click here to login</span>
+                    <span class="checkout__link-btn checkout__link-btn--code">Click here to enter your code</span>
                   </p>
+                  <div class="checkout__coupon">
+                    <p class="checkout__text">
+                      If you have a coupon code, please apply it below.
+                    </p>
+                    <form class="coupon">
+                      <label for="coupon" class="shopping-cart__lbl">
+                        <span class="visually-hidden">Coupon</span>
+                        <input
+                        class="shopping-cart-input"
+                        id="coupon"
+                        name="shopping-cart__coupon"
+                        type="text"
+                        placeholder="Coupon code"
+                        required
+                      />
+                      </label>                      
+                      <button
+                        class="button shopping-cart__btn"
+                        type="submit"
+                      >
+                        Apply Coupon
+                      </button>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>

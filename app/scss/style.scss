@@ -1807,12 +1807,9 @@ input {
      }
  } 
 
-
- .checkout__link .login {
-    display: none;
-} 
-
- .login {
+ .checkout__login,
+ .checkout__coupon {
+     display: none;
      border: 1px solid $grey;
      border-radius: 5px;
      padding: 20px;     
@@ -1821,11 +1818,7 @@ input {
 
  .login__text {
      margin: 0 0 10px;
- }
-
- .login__form {
-     position: relative;
- }
+ } 
 
  .login__input {
      display: block;
