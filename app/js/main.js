@@ -72,12 +72,12 @@ $(function () {
       '<button class="slick-arrow slick-next"><span class="icon-long-arrow-right"></span></button>',
   });
   $(".icon-list").on("click", function () {
-    $(".product").addClass("list");
+    $(".switch .product").addClass("list");
     $(".icon-list").addClass("active");
     $(".icon-th").removeClass("active");
   });
   $(".icon-th").on("click", function () {
-    $(".product").removeClass("list");
+    $(".switch .product").removeClass("list");
     $(".icon-list").removeClass("active");
     $(".icon-th").addClass("active");
   });

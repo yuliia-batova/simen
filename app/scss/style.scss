@@ -1355,9 +1355,11 @@
     font-weight: 600;
     border: 1px solid $grey;
     padding: 15px;
+    cursor: pointer;
     &.active {
         color: $white;
         background-color: $black;
+        cursor: default;
     }
 }
 
@@ -1652,7 +1654,7 @@ input {
 }
 
 .shopping-cart__item {
-    border: 1px solid $grey;
+    border: 1px solid $grey;    
     text-align: center;
     .product__one-num { 
         display: inline-flex;
@@ -1691,6 +1693,7 @@ input {
 
 .shopping-cart__caption {
     background-color: $light-grey;
+    text-align: center;
 }
 
 .shopping-cart__actions {
@@ -1728,8 +1731,8 @@ input {
     width: 30%;
 }
 
-.shopping-cart__item,
-.shopping-cart__th {
+.shopping-cart__bottom .shopping-cart__item,
+.shopping-cart__bottom .shopping-cart__th {
     text-align: start;
 }
 .shopping-cart__list-item {
