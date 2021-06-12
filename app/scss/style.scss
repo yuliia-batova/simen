@@ -226,7 +226,7 @@
 
 .intro__slider-img {
     max-width: 570px;
-    min-height: 544px;
+    min-height: 544px;    
 }
 
 .intro__banner,
@@ -234,19 +234,18 @@
     position: relative;
 }
 
-.into__banner-link {
-    overflow: hidden;
-}
+// .into__banner-link {
+//     overflow: hidden;
+// }
 
 .intro__banner-img {
     transition: transform 1s;
+    max-width: 100%;
     &--m {
-        max-width: 570px;
         max-height: 277px;
         margin-bottom: 29px;
     }
     &--s {
-        max-width: 270px;
         max-height: 257px;
     }
     &:hover {
@@ -255,10 +254,14 @@
     }
 }
 
+.intro__slider {
+    max-height: 544px;
+}
+
 .intro__slider.slick-slider {
     position: relative;
-    max-width: 570px;
-    max-height: 544px;
+    max-width: 50%;
+    height: 100%;
 }
 
 .intro__slider .slick-dots {
@@ -484,6 +487,11 @@
     padding: 30px;
     margin-bottom: 50px;
     border: 1px solid $grey;
+}
+
+.novelty__img {
+    max-width: 425px;
+    max-height: 425px;
 }
 
 .novelty__inner-info {

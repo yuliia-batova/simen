@@ -26,7 +26,30 @@ $(function () {
       '<button class="slick-arrow slick-prew"><span class="icon-long-arrow-left"></span></button>',
     nextArrow:
       '<button class="slick-arrow slick-next"><span class="icon-long-arrow-right"></span></button>',
-  });
+      responsive: [
+        {
+          breakpoint: 906,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 6,
+          }
+        },
+        {
+          breakpoint: 687,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 4,
+          }
+        },
+        {
+          breakpoint: 463,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 2,
+          }
+        }
+      ]
+    });
   $(".posts__slider-items").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -38,7 +61,21 @@ $(function () {
       '<button class="slick-arrow slick-prew"><span class="icon-long-arrow-left"></span></button>',
     nextArrow:
       '<button class="slick-arrow slick-next"><span class="icon-long-arrow-right"></span></button>',
-  });
+      responsive: [
+        {
+          breakpoint: 906,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 510,
+          settings: {
+            slidesToShow: 1,
+          }
+        }        
+      ]
+    });
   $(".brands__slider").slick({
     slidesToShow: 6,
     slidesToScroll: 1,
@@ -47,6 +84,38 @@ $(function () {
     dots: false,
     autoplay: true,
     autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 906,
+        settings: {
+          slidesToShow: 5,
+        }
+      },
+      {
+        breakpoint: 687,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 609,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 370,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
   $(".js-range-slider").ionRangeSlider({
     type: "double",
