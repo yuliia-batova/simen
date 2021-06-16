@@ -7,11 +7,7 @@
         padding-right: 0;
     }
 
-    .intro__banner {
-        margin-left: 10px;
-    }
-
-    .line--l {
+        .line--l {
         width: 71%;
     }
 
@@ -61,8 +57,8 @@
             color: $light-grey;
         }
     }
-    .dropdown {
-        position: static;
+    .menu .dropdown {
+        position: static;        
         background-color: transparent;
     }
 
@@ -122,6 +118,9 @@
         }
     }
 
+    .intro__slider-item {        
+        height: 510px;    
+    }
     .novelty__title {
         font-size: 50px;
     }
@@ -143,6 +142,8 @@
         }
     }
 
+    
+
     .footer__inner {
         justify-content: space-around;
         flex-wrap: wrap;
@@ -163,9 +164,10 @@
     }
 }
 
-@media (max-width: 905px) {
-    
-
+@media (max-width: 905px) {   
+    .intro__slider-item {        
+        height: 440px;    
+    }
     .suggest__img {
         display: none;
     }
@@ -173,11 +175,17 @@
     .promotions__img {
         height: 250px;
     }
+
+    
 }
 
 @media (max-width: 867px) {
     .header__policy-title {
         display: none;
+    }
+
+    .intro__slider-item {        
+        height: 417px;    
     }
 
     .novelty__title {
@@ -191,6 +199,8 @@
     .line--l {
         width: 60%;
     }
+
+    
 
     .footer__inner {
         justify-content: space-between;
@@ -227,6 +237,10 @@
     .promotions {
         display: none;
     }
+
+    .intro__slider-item {        
+        height: 387px;    
+    }
 }
 
 @media (max-width: 767px) {
@@ -260,6 +274,18 @@
         padding: 15px 0;
     }
 
+    .intro__banner {
+        display: none;
+    }
+
+    .intro__slider.slick-slider {
+        max-width: 100%;
+    }
+
+    .intro__slider-item {    
+        max-height: 370px;    
+    }
+
     .novelty__inner {
         display: block;
     }
@@ -282,6 +308,9 @@
         padding: 6px 6px;
         margin-bottom: 10px;
     }
+
+    
+
 }
 
 @media (max-width: 575px) {
@@ -377,6 +406,9 @@
 @media (max-width: 370px) {
     .header__content-item--visibility {
         display: none;
+    }
+    .intro__slider-item {    
+        max-height: 300px;    
     }
     .popular,
     .posts {
