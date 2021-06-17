@@ -156,6 +156,12 @@ body {
     &:hover {
         background-color: $red;
     }
+    &--white {
+        color: $black;
+        background-color: $white;
+        border: 1px solid $grey;
+        padding: 8px 15px;
+    }
 }
 
 .post__img {        
