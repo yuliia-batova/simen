@@ -1132,12 +1132,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+}
+
+.furniture__filter-category {
+    display: none;
 }
 
 .furniture__filter-menu {
     display: none;
-    // display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 10px;    
     .category {
         display: inline-block;
@@ -1145,7 +1150,7 @@
         width: 100%;
         min-height: 245px;
         padding: 10px;
-        margin: 0;
+        margin: 0 0 10px 0;
     }
 }
 

@@ -152,15 +152,17 @@ body {
     color: $white;
     background-color: $black;
     cursor: pointer;
-    transition: background-color 0.5s;
-    &:hover {
-        background-color: $red;
-    }
+    transition: background-color 0.5s;    
     &--white {
         color: $black;
-        background-color: $white;
+        background-color: $white;        
+    }
+    &--filter {
         border: 1px solid $grey;
         padding: 8px 15px;
+    }
+    &:hover {
+        background-color: $red;
     }
 }
 
