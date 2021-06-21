@@ -1353,11 +1353,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     .product__basket {
-        margin-right: 20px;
+        white-space: nowrap;
+        max-width: 195px;
+        margin-bottom: 10px;
     }
     .product__info {
         border: 1px solid $grey;
+        margin-bottom: 10px;
         & .product__info-btn {
             min-width: 35px;
             height: 35px;
@@ -1367,7 +1371,7 @@
 
 .product__one-num {
     display: flex;
-    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 .quant {

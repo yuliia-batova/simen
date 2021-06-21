@@ -11,6 +11,13 @@
         width: 71%;
     }
 
+    .product-one {        
+        .aside {
+            margin-left: 10px;
+        }
+        
+    }
+
     .suggest__category {
         display: flex;
         justify-content: space-between;
@@ -121,6 +128,22 @@
     .intro__slider-item {
         height: 510px;
     }
+
+
+    .product__one-add {
+        justify-content: center;
+        flex-direction: column;
+    } 
+
+    .related-product .product.product--l {
+        max-width: none;
+    }
+
+    .product__img--l  {
+        min-height: none;        
+    }
+
+
     .novelty__title {
         font-size: 50px;
     }
@@ -179,6 +202,11 @@
         display: flex;
     }
 
+    .product__one-add {
+        justify-content: space-between;
+        flex-direction: row;
+    } 
+
     .suggest__img {
         display: none;
     }
@@ -207,7 +235,12 @@
 
     .line--l {
         width: 60%;
-    }    
+    }   
+    
+    .line--m {
+        width: 50%;
+    }
+
 
     .footer__inner {
         justify-content: space-between;
@@ -293,6 +326,33 @@
         max-height: 370px;
     }
 
+    .product-one__slider {
+        max-width: 300px;
+        margin-right: 30px;
+    }
+    
+    .product-one__for {
+        max-width: 300px;
+        margin-bottom: 10px;
+    }
+    
+    .product-one__for-img {
+        width: 100%;
+        max-height: 331px;
+        border: 1px solid $grey;
+    }
+
+    .product__one-add {
+        justify-content: center;
+        flex-direction: column;
+    } 
+
+    .tab {
+        padding: 8px;
+        min-height: 58px;
+    }
+
+    
     .novelty__inner {
         display: block;
     }
@@ -339,6 +399,38 @@
             justify-content: center;
         }        
     }   
+
+    .product-one__slider {
+        display: none;
+    }
+
+    .product-one__info{
+        text-align: center;
+    }
+
+    .product-one__rate {
+        margin: 0 auto;
+    } 
+
+    .product__one-text {
+        text-align: justify;
+    }
+
+    .product__one-add {
+        justify-content: space-between;
+        flex-direction: row;
+    } 
+
+
+    .line--m {
+        width: 40%;
+    }
+
+
+    .related-product .product__img.product__img--l {
+       margin: auto;
+   }
+
 
     .suggest {
         .line {
@@ -414,6 +506,11 @@
         justify-content: center;
     }
 
+    .line--m {
+        width: 29%;
+    }
+
+
     .latest__btn {
         display: block;
         padding: 0 0 6px 0;
@@ -447,6 +544,15 @@
 
     .furniture__filter-category {
         margin-top: 10px;
+    }
+
+    .product__one-add {
+        justify-content: center;
+        flex-direction: column;
+    } 
+
+    .line--m {
+        display: none;
     }
 
     .popular,
