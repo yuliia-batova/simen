@@ -24,13 +24,16 @@
     }
 
     .checkout {
-        .login__input,
         .coupon .checkout__input,
         .requisite__input,
         .country {
             min-width: 200px;            
         }
     }
+
+    .login .login__input {
+            min-width: 200px;            
+        }
 
     .suggest__category {
         display: flex;
@@ -148,6 +151,7 @@
         flex-direction: column;
     }
 
+    
     .related-product .product.product--l {
         max-width: none;
     }
@@ -619,6 +623,10 @@
         height: 25px;
         font-size: 12px;
         line-height: 2;
+    }
+
+    .product-one__top .product__basket {
+        margin-top: 10px;
     }
 
     .shopping-cart__item .product__price-subtotal {
