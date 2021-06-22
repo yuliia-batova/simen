@@ -5,7 +5,7 @@
 
     .header__content-item {
         padding-right: 0;
-    }
+    }   
 
     .line--l {
         width: 71%;
@@ -18,8 +18,8 @@
     }
     .posts {
         .aside {
-            margin-right: 10px;
             min-width: 223px;
+            margin-right: 10px;            
         }
     }
 
@@ -27,21 +27,23 @@
         .coupon .checkout__input,
         .requisite__input,
         .country {
-            min-width: 200px;            
+            min-width: 200px;
         }
     }
 
     .login .login__input {
-            min-width: 200px;            
-        }
+        min-width: 200px;
+    }
 
     .suggest__category {
         display: flex;
         justify-content: space-between;
     }
+
     .suggest__btn + .suggest__btn {
         margin-left: 2px;
     }
+
     .promotions__item + .promotions__item {
         margin-left: 10px;
     }
@@ -81,6 +83,7 @@
             color: $light-grey;
         }
     }
+    
     .menu .dropdown {
         position: static;
         background-color: transparent;
@@ -151,7 +154,6 @@
         flex-direction: column;
     }
 
-    
     .related-product .product.product--l {
         max-width: none;
     }
@@ -367,8 +369,8 @@
     }
 
     .tab {
-        padding: 8px;
         min-height: 58px;
+        padding: 8px;        
     }
 
     .contact__form {
@@ -401,9 +403,9 @@
         flex-wrap: wrap;
     }
 
-    .suggest__btn {
-        padding: 6px 6px;
+    .suggest__btn {        
         margin-bottom: 10px;
+        padding: 6px 6px;
     }
 }
 
@@ -568,8 +570,8 @@
 
     .latest__btn {
         display: block;
-        padding: 0 0 6px 0;
         margin: 0 auto;
+        padding: 0 0 6px 0;        
     }
 
     .latest__btn + .latest__btn {
