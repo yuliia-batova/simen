@@ -1462,11 +1462,7 @@
     min-height: 75px;
     outline: none;
 }
-input {
-    width: 30%;
-    padding: 8px 10px;
-    outline: none;
-}
+
 
 .tab-item__email {
     margin-bottom: 20px;
@@ -1780,7 +1776,7 @@ input {
 }
 
 .shopping-cart__shipping {
-    padding: 20px 20px 20px 0;
+    padding: 20px 20px 20px 0;   
 }
 
 .shopping-cart__text-address {
@@ -1820,6 +1816,9 @@ input {
         width: 50%;
         margin-bottom: 20px;
     }
+    .shopping-cart__item {
+        text-align: start;
+    }    
 }
 
 .checkout__requisite {
@@ -1884,7 +1883,7 @@ input {
 
 .create-account__input,
 .remember__input {
-    width: 25px;
+    width: 25px;    
 }
 
 .checkout__password {
