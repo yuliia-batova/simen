@@ -104,6 +104,7 @@
 }
 
 .header__policy-title {
+        
     font-size: 14px;
     line-height: 1.4;
     text-transform: uppercase;
@@ -112,6 +113,7 @@
 }
 
 .header__policy-text {
+    display: table;
     margin: 0;
     font-size: 12px;
     line-height: 1.7;
@@ -310,12 +312,12 @@
     border: none;
     outline: 0;
     cursor: pointer;
-    &:hover {
-        font-weight: 600;
-    }
+    &:hover,
     &.mixitup-control-active {
         font-weight: 600;
-    }
+        color: $red;
+        border-color: $red;
+    }    
 }
 
 .latest__btn + .latest__btn {
@@ -449,6 +451,12 @@
     text-align: center;
 }
 
+.product__desc-head,
+.dropdown__desc-head {
+    margin: 0;
+    font-weight: 400;
+}
+
 .title {
     font-size: 13px;
     line-height: 1.5;
@@ -542,7 +550,8 @@
 }
 
 .suggest__title {
-    margin: 0;
+    display: block;
+    // margin: 0;
     font-size: 12px;
     line-height: 2.5;
 }
@@ -666,6 +675,7 @@
 }
 
 .posts__slider-text {
+    display: block;
     text-align: justify;
 }
 
