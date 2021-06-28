@@ -106,6 +106,21 @@ body {
     text-transform: uppercase;
 }
 
+.product-head {
+    margin: 0;
+    font-weight: 400;
+}
+
+.title {
+    font-size: 13px;
+    line-height: 1.5;
+    color: $grey;
+    transition: color 0.5s;
+    &:hover {
+        color: $red;
+    }
+}
+
 .curly-line {
     display: block;
     height: 3px;

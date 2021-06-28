@@ -289,7 +289,7 @@ $(function () {
   });
 
   $(".shopping-cart__text-address").on("click", function () {
-    $(".shopping-cart__address").slideToggle();
+    $(".address").slideToggle();
   });
 
   $(".checkout__link-btn--login").on("click", function () {

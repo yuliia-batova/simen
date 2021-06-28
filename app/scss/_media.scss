@@ -35,6 +35,10 @@
         min-width: 200px;
     }
 
+    .contact__map-iframe {
+        width: 100%;
+    }
+
     .suggest__category {
         display: flex;
         justify-content: space-between;
@@ -96,7 +100,7 @@
     .menu__item-furniture:hover,
     .menu__item-bedroom:hover {
         .dropdown {
-            height: none;
+            height: 0;
             padding: 0;
             border: none;
         }
@@ -159,7 +163,7 @@
     }
 
     .product__img--l {
-        min-height: none;
+        min-height: auto;
     }
 
     .novelty__title {
@@ -417,7 +421,7 @@
     .product.list {
         flex-direction: column;
         .product__content {
-            min-width: none;
+            min-width: auto;
             text-align: center;
         }
 

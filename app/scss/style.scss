@@ -104,7 +104,6 @@
 }
 
 .header__policy-title {
-        
     font-size: 14px;
     line-height: 1.4;
     text-transform: uppercase;
@@ -317,7 +316,7 @@
         font-weight: 600;
         color: $red;
         border-color: $red;
-    }    
+    }
 }
 
 .latest__btn + .latest__btn {
@@ -451,22 +450,6 @@
     text-align: center;
 }
 
-.product__desc-head,
-.dropdown__desc-head {
-    margin: 0;
-    font-weight: 400;
-}
-
-.title {
-    font-size: 13px;
-    line-height: 1.5;
-    color: $grey;
-    transition: color 0.5s;
-    &:hover {
-        color: $red;
-    }
-}
-
 .product__price {
     margin: 0;
     font-weight: 600;
@@ -551,7 +534,6 @@
 
 .suggest__title {
     display: block;
-    // margin: 0;
     font-size: 12px;
     line-height: 2.5;
 }
@@ -948,27 +930,27 @@
     margin: 20px 0 10px;
 }
 
-.menu__item-furniture:hover {
+.menu__item-furniture:hover,
+.menu__item-bedroom:hover {
     .dropdown {
         height: auto;
-        padding: 30px;
         border: 1px solid $grey;
     }
 }
 
-.menu__item-bedroom:hover {
-    .dropdown {
-        height: auto;
-        padding: 60px 15px 30px;
-        border: 1px solid $grey;
-    }
+.menu__item-furniture:hover .dropdown {
+    padding: 30px;
+}
+
+.menu__item-bedroom:hover .dropdown {
+    padding: 60px 15px 30px;
 }
 
 .header__menu-link {
     position: relative;
     &:hover {
         .dropdown {
-            height: auto;            
+            height: auto;
             padding: 20px;
             border: 1px solid $grey;
         }
@@ -996,7 +978,7 @@
 }
 
 .category__list {
-    counter-reset: my-awesome-counter;    
+    counter-reset: my-awesome-counter;
     margin-top: 20px;
     margin-bottom: 0;
     padding: 0;
@@ -1694,6 +1676,7 @@
 
 .shopping-cart__table {
     width: 100%;
+    margin-bottom: 20px;
     border-spacing: 0;
     border-collapse: collapse;
 }
@@ -1751,6 +1734,7 @@
     &--update {
         position: absolute;
         right: 12px;
+        top: 12px;
     }
 }
 
@@ -1763,10 +1747,6 @@
 
 .shopping-cart__title {
     margin-top: 0;
-}
-.shopping-cart__table {
-    margin-bottom: 20px;
-    border-color: none;
 }
 
 .shopping-cart__items .shopping-cart__th {
