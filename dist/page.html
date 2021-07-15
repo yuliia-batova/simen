@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIMEN</title>
+    <link type="image/x-icon" rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <header class="header">
+          <div class="header__top">
+            <div class="container">
+              <div class="header__top-inner">
+                <div class="header__settings">
+                  <form class="header__settings-form">
+                    <select
+                      class="header__language"
+                      name="language"
+                      style="background-image: url(images/caret-down.png)"
+                    >
+                      <option
+                        class="header__language-list"
+                        value="English"
+                        selected
+                      >
+                        English
+                      </option>
+                      <option class="header__language-list" value="Russian">
+                        Russian
+                      </option>
+                      <option class="header__language-list" value="Ukrainian">
+                        Ukrainian
+                      </option>
+                    </select>
+                  </form>
+                  <form class="header__settings-form">
+                    <select
+                      class="header__currency"
+                      name="currency"
+                      style="background-image: url(images/caret-down.png)"
+                    >
+                      <option
+                        class="header__currency-list"
+                        value="USD"
+                        selected
+                      >
+                        USD
+                      </option>
+                      <option class="header__currency-list" value="RUB">
+                        RUB
+                      </option>
+                      <option class="header__currency-list" value="UAH">
+                        UAH
+                      </option>
+                    </select>
+                  </form>
+                </div>
+                <div class="header__account">
+                  <a
+                    href="#"
+                    class="header__account-link header__account-link--my"
+                  >
+                    <span
+                      class="icon-user icon icon--m header__account-icon"
+                    ></span>
+                    My Account
+                  </a>
+                  <a href="#" class="header__account-link">
+                    <span class="icon-heart-o icon header__account-icon"></span>
+                    My Wishlist
+                  </a>
+                  <a
+                    href="checkout.html"
+                    class="header__account-link header__account-link--checkout"
+                  >
+                    <span
+                      class="icon-check-square-o icon header__account-icon"
+                    ></span>
+                    Checkout
+                  </a>
+                  <a
+                    href="login.html"
+                    class="header__account-link header__account-link--login"
+                  >
+                    <span class="icon-key icon header__account-icon"></span>
+                    Login
+                  </a>
+                </div>
+                <span
+                  class="icon-anchor icon icon--l header__account-btn"
+                ></span>
+              </div>
+            </div>
+          </div>
+          <div class="header__content">
+            <div class="container">
+              <div class="header__content-inner">
+                <div class="header__content-item header__content-item--logo">
+                  <a class="logo" href="index.html">
+                    <img src="images/logo.png" alt="logo" />
+                  </a>
+                </div>
+                <div
+                  class="
+                    header__content-item
+                    header__content-item--delivery
+                    header__content-item--visibility
+                  "
+                >
+                  <span
+                    class="icon-truck icon icon--m header__policy-img"
+                  ></span>
+                  <span class="header__policy-title"
+                    >FREE DELIVERY WORLDWIDE
+                    <span class="header__policy-text">On order over $100</span>
+                  </span>
+                </div>
+                <div
+                  class="
+                    header__content-item
+                    header__content-item--discount
+                    header__content-item--visibility
+                  "
+                >
+                  <span
+                    class="icon-cloud-upload icon icon--m header__policy-img"
+                  ></span>
+                  <span class="header__policy-title">
+                    UP TO 20% OFF COSY LAYERS
+                    <span class="header__policy-text">
+                      Lorem ipsum dolor sit amet
+                    </span>
+                  </span>
+                </div>
+                <div
+                  class="
+                    header__content-item
+                    header__content-item--pros
+                    header__content-item--visibility
+                  "
+                >
+                  <span
+                    class="icon-gift icon icon--m header__policy-img"
+                  ></span>
+                  <span class="header__policy-title">
+                    Buy 1 get 1 free
+                    <span class="header__policy-text">On order over $100</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__menu">
+            <div class="container">
+              <span class="curly-line"></span>
+              <div class="header__menu-inner">
+                <nav class="header__menu-nav">
+                  <div class="header__menu-btn">
+                    <span class="header__menu-line"></span>
+                    <span class="header__menu-line"></span>
+                    <span class="header__menu-line"></span>
+                    <span class="header__menu-line"></span>
+                  </div>
+                  <ul class="menu">
+                    <li class="menu__item">
+                      <a href="index.html" class="menu__link menu__link--red"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="menu__item menu__item-furniture">
+                      <a href="furniture.html" class="menu__link">Furniture </a>
+                      <div class="dropdown dropdown__furniture">
+                        <div class="container">
+                          <div class="dropdown__boxs">
+                            <div class="dropdown__box">
+                              <div class="dropdown__items">
+                                <div class="dropdown__item">
+                                  <p
+                                    class="
+                                      dropdown__title
+                                      dropdown__title--border
+                                      dropdown__title-slideone
+                                    "
+                                  >
+                                    Table
+                                  </p>
+                                  <div
+                                    class="
+                                      dropdown__wrapp dropdown__wrapp-slideone
+                                    "
+                                  >
+                                    <ul class="dropdown__nemu">
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Kitchen & Dining Room Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Folding Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Living Room Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Sofa Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >End Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Coffee Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="#" class="dropdown__link"
+                                          >Pedestal Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Home Office Desks</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="dropdown__item">
+                                  <p
+                                    class="
+                                      dropdown__title
+                                      dropdown__title--border
+                                      dropdown__title-slidetwo
+                                    "
+                                  >
+                                    Table
+                                  </p>
+                                  <div
+                                    class="
+                                      dropdown__wrapp dropdown__wrapp-slidetwo
+                                    "
+                                  >
+                                    <ul class="dropdown__nemu">
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Living Room Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Sofa Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >End Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="coffee-tables.html" class="dropdown__link"
+                                          >Coffee Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Pedestal Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Home Office Desks</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Kids' Furniture</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Kitchen & Dining Room Sets</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <a href="furniture.html" class="dropdowm__items-link">
+                                <img
+                                  src="images/dropdown-1.jpg"
+                                  alt="chairs"
+                                  class="dropdown__img dropdown__img--b"
+                                />
+                              </a>
+                            </div>
+                            <div class="dropdown__box">
+                              <div class="dropdown__items">
+                                <div class="dropdown__item">
+                                  <p
+                                    class="
+                                      dropdown__title
+                                      dropdown__title--border
+                                      dropdown__title-slidethree
+                                    "
+                                  >
+                                    Table
+                                  </p>
+                                  <div
+                                    class="
+                                      dropdown__wrapp dropdown__wrapp-slidethree
+                                    "
+                                  >
+                                    <ul class="dropdown__nemu">
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Kitchen & Dining Room Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Folding Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >End Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="coffee-tables.html" class="dropdown__link"
+                                          >Coffee Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Pedestal Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Home Office Desks</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Kids' Furniture</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Kitchen & Dining Room Sets</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="dropdown__item">
+                                  <p
+                                    class="
+                                      dropdown__title
+                                      dropdown__title--border
+                                      dropdown__title-slidefour
+                                    "
+                                  >
+                                    Table
+                                  </p>
+                                  <div
+                                    class="
+                                      dropdown__wrapp dropdown__wrapp-slidefour
+                                    "
+                                  >
+                                    <ul class="dropdown__nemu">
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Dining Room Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Folding Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Living Room Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Sofa Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >End Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Coffee Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Pedestal Tables</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <a href="furniture.html" class="dropdowm__items-link">
+                                <img
+                                  src="images/dropdown-2.jpg"
+                                  alt=""
+                                  class="dropdown__img dropdown__img--b"
+                                />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <a href="coffee-tables.html" class="menu__link">Coffee tables</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="sofas.html" class="menu__link">Sofas</a>
+                    </li>
+                    <li class="menu__item menu__item-bedroom">
+                      <a href="bedroom-furniture.html" class="menu__link"> Bedroom furniture </a>
+                      <div class="dropdown dropdown__bedroom">
+                        <div class="container">
+                          <div class="dropdown__boxs">
+                            <a href="bedroom-furniture.html" class="dropdowm__items-link">
+                              <img
+                                src="images/dropdown-4.jpeg"
+                                alt="chairs"
+                                class="dropdown__img dropdown__img--m"
+                              />
+                              <p class="dropdown__title">sofa</p>
+                              <p class="dropdown__text">
+                                Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard.
+                              </p>
+                            </a>
+                            <a href="bedroom-furniture.html" class="dropdowm__items-link">
+                              <img
+                                src="images/dropdown-3.jpeg"
+                                alt="chairs"
+                                class="dropdown__img dropdown__img--m"
+                              />
+                              <p class="dropdown__title">chair</p>
+                              <p class="dropdown__text">
+                                Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard.
+                              </p>
+                            </a>
+                            <a href="bedroom-furniture.html" class="dropdowm__items-link">
+                              <img
+                                src="images/dropdown-5.jpeg"
+                                alt="chairs"
+                                class="dropdown__img dropdown__img--m"
+                              />
+                              <p class="dropdown__title">bed</p>
+                              <p class="dropdown__text">
+                                Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard.
+                              </p>
+                            </a>
+                            <a href="bedroom-furniture.html" class="dropdowm__items-link">
+                              <img
+                                src="images/dropdown-6.jpeg"
+                                alt="chairs"
+                                class="dropdown__img dropdown__img--m"
+                              />
+                              <p class="dropdown__title">furniture chest</p>
+                              <p class="dropdown__text">
+                                Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard.
+                              </p>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <a href="shop.html" class="menu__link">shop</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="blog.html" class="menu__link">blog</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="contact-us.html" class="menu__link">Contact us</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="header__menu-wrap">
+                  <span class="icon-search icon icon--m"></span>
+                  <div class="header__menu-link">
+                    <a href="shopping-cart.html" class="header__cart">
+                      <span
+                        class="icon-shopping-cart icon icon--m icon--active"
+                      ></span>
+                      <span class="header__cart-calc">2</span>
+                      <span class="header__cart-items">( items )</span>
+                    </a>
+                    <div class="dropdown dropdown__cart">
+                      <article class="product dropdown__product">
+                        <div class="product__content dropdown__content">
+                          <a href="product-one.html" class="dropdown__content-link">
+                            <img
+                              class="
+                                product__img product__img--xs
+                                dropdown__content-img
+                              "
+                              src="images/latest-1.jpg"
+                              alt="table"
+                          /></a>
+                          <div class="product__desc dropdown__desc">
+                            <a href="product-one.html" class="title drodown__desc-title">
+                              <h4 class="product-head">Modular Modern</h4>
+                            </a>
+                            <p class="product__price drodown__desc-price">
+                              $ 540.00
+                            </p>
+                          </div>
+                          <span
+                            class="
+                              icon-close icon icon--s
+                              dropdown__product-close
+                            "
+                          ></span>
+                        </div>
+                      </article>
+                      <article class="product dropdown__product">
+                        <div class="product__content dropdown__content">
+                          <a href="product-one.html" class="dropdown__content-link">
+                            <img
+                              class="
+                                product__img product__img--xs
+                                dropdown__content-img
+                              "
+                              src="images/latest-1.jpg"
+                              alt="table"
+                          /></a>
+                          <div class="product__desc dropdown__desc">
+                            <a href="product-one.html" class="title drodown__desc-title">
+                              <h4 class="product-head">Modular Modern</h4>
+                            </a>
+                            <p class="product__price drodown__desc-price">
+                              $ 540.00
+                            </p>
+                          </div>
+                          <span
+                            class="
+                              icon-close icon icon--s
+                              dropdown__product-close
+                            "
+                          ></span>
+                        </div>
+                      </article>
+                      <article class="product dropdown__product">
+                        <div class="product__content dropdown__content">
+                          <a href="product-one.html" class="dropdown__content-link">
+                            <img
+                              class="
+                                product__img product__img--xs
+                                dropdown__content-img
+                              "
+                              src="images/latest-1.jpg"
+                              alt="table"
+                          /></a>
+                          <div class="product__desc dropdown__desc">
+                            <a href="product-one.html" class="title drodown__desc-title">
+                              <h4 class="product-head">Modular Modern</h4>
+                            </a>
+                            <p class="product__price drodown__desc-price">
+                              $ 540.00
+                            </p>
+                          </div>
+                          <span
+                            class="
+                              icon-close icon icon--s
+                              dropdown__product-close
+                            "
+                          ></span>
+                        </div>
+                      </article>
+                      <p class="title dropdown__total">
+                        Total: <span class="dropdown__total-price">$ 1620</span>
+                      </p>
+                      <a href="checkout.html" class="dropdown__product-chekout">
+                        check out
+                      </a>
+                      <a href="shopping-cart.html" class="dropdown__product-cart">
+                        go to cart
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <form class="header__search">
+                <label for="search-1" class="header__search-lbl">
+                  <span class="visually-hidden">Search entire store here</span>
+                </label>
+                <input
+                  class="header__search-input"
+                  id="search-1"
+                  name="header__search"
+                  placeholder="Search entire store here ..."
+                  type="search"
+                  required
+                />
+                <button class="header__search-btn" type="submit">search</button>
+              </form>
+              <span class="curly-line"></span>
+            </div>
+          </div>
+        </header>
+        <main class="main"></main>
+      </div>
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="container">
+            <div class="footer__inner">
+              <div class="footer__contacts">
+                <p class="footer__title">Contact us</p>
+                <address class="footer__address">
+                  <div class="footer__item footer__connection">
+                    <span
+                      class="icon icon-home footer__icon footer__icon--addr"
+                    ></span>
+                    <a href="https://goo.gl/maps/WQdTkQ76BVUNDVsH9" target="_blank" class="footer__text"
+                      >8888 South Avenue Street, New York</a
+                    >
+                  </div>
+                  <div class="footer__item footer__connection">
+                    <span
+                      class="icon icon-phone footer__icon footer__icon--phone"
+                    ></span>
+                    <a class="footer__text" href="tel:1234567896"
+                      >(12) 3 456 7896</a
+                    >
+                    <a class="footer__text" href="tel:1234567895"
+                      >(12) 3 456 7895</a
+                    >
+                  </div>
+                  <div class="footer__item footer__connection">
+                    <span
+                      class="icon icon-envelope footer__icon footer__icon--mail"
+                    ></span>
+                    <a class="footer__text" href="mailto:contact@simen.com"
+                      >contact@simen.com</a
+                    >
+                    <a class="footer__text" href="mailto:info@simen.com"
+                      >info@simen.com</a
+                    >
+                  </div>
+                </address>
+              </div>
+              <div class="footer__service footer__col">
+                <p class="footer__title">Service</p>
+                <ul class="footer__menu">
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Prices & Currencies</a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Secure Payment</a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Delivery Times & Costs</a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Returns & Exchanges</a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">FAQ's</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__account footer__col">
+                <p class="footer__title">account</p>
+                <ul class="footer__menu">
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">My account</a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Wishlist </a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Order history</a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Specials</a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Gift vouchers</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__info footer__col">
+                <p class="footer__title">information</p>
+                <ul class="footer__menu">
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">My account</a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Wishlist </a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Order history</a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Specials</a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Gift vouchers</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__newslette footer__col">
+                <p class="footer__title">Newsletter</p>
+                <p class="footer__email">Register your email for news</p>
+                <form class="footer__subscribe">
+                  <label for="subscribe" class="footer__subscribe-lbl">
+                    <span class="visually-hidden">Enter email</span>
+                  </label>
+                  <input
+                    class="footer__subscribe-input"
+                    id="subscribe"
+                    name="footer__subscribe"
+                    type="text"
+                    placeholder="Your email here"
+                    required
+                  />
+                  <button class="footer__subscribe-btn" type="submit">
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="footer__bottom-inner">
+              <p class="footer__bottom-text">
+                © 2015 Magento Demo Store. All Rights Reserved. Developed by
+                SNSTheme.Com
+              </p>
+              <div class="footer__bottom-peyment">
+                <img
+                  class="footer__bottom-img"
+                  src="images/paypal.png"
+                  alt="PeyPal"
+                />
+                <img
+                  class="footer__bottom-img"
+                  src="images/mastercard.png"
+                  alt="MasterCard"
+                />
+                <img
+                  class="footer__bottom-img"
+                  src="images/maestro.png"
+                  alt="Maestro"
+                />
+                <img
+                  class="footer__bottom-img"
+                  src="images/visa.png"
+                  alt="Visa"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

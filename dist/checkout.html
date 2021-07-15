@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIMEN</title>
+    <link type="image/x-icon" rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <header class="header">
+          <div class="header__top">
+            <div class="container">
+              <div class="header__top-inner">
+                <div class="header__settings">
+                  <form class="header__settings-form">
+                    <select
+                      class="header__language"
+                      name="language"
+                      style="background-image: url(images/caret-down.png)"
+                    >
+                      <option
+                        class="header__language-list"
+                        value="English"
+                        selected
+                      >
+                        English
+                      </option>
+                      <option class="header__language-list" value="Russian">
+                        Russian
+                      </option>
+                      <option class="header__language-list" value="Ukrainian">
+                        Ukrainian
+                      </option>
+                    </select>
+                  </form>
+                  <form class="header__settings-form">
+                    <select
+                      class="header__currency"
+                      name="currency"
+                      style="background-image: url(images/caret-down.png)"
+                    >
+                      <option
+                        class="header__currency-list"
+                        value="USD"
+                        selected
+                      >
+                        USD
+                      </option>
+                      <option class="header__currency-list" value="RUB">
+                        RUB
+                      </option>
+                      <option class="header__currency-list" value="UAH">
+                        UAH
+                      </option>
+                    </select>
+                  </form>
+                </div>
+                <div class="header__account">
+                  <a
+                    href="#"
+                    class="header__account-link header__account-link--my"
+                  >
+                    <span
+                      class="icon-user icon icon--m header__account-icon"
+                    ></span>
+                    My Account
+                  </a>
+                  <a href="#" class="header__account-link">
+                    <span class="icon-heart-o icon header__account-icon"></span>
+                    My Wishlist
+                  </a>
+                  <a
+                    href="checkout.html"
+                    class="header__account-link header__account-link--checkout"
+                  >
+                    <span
+                      class="icon-check-square-o icon header__account-icon"
+                    ></span>
+                    Checkout
+                  </a>
+                  <a
+                    href="login.html"
+                    class="header__account-link header__account-link--login"
+                  >
+                    <span class="icon-key icon header__account-icon"></span>
+                    Login
+                  </a>
+                </div>
+                <span
+                  class="icon-anchor icon icon--l header__account-btn"
+                ></span>
+              </div>
+            </div>
+          </div>
+          <div class="header__content">
+            <div class="container">
+              <div class="header__content-inner">
+                <div class="header__content-item header__content-item--logo">
+                  <a class="logo" href="index.html">
+                    <img src="images/logo.png" alt="logo" />
+                  </a>
+                </div>
+                <div
+                  class="
+                    header__content-item
+                    header__content-item--delivery
+                    header__content-item--visibility
+                  "
+                >
+                  <span
+                    class="icon-truck icon icon--m header__policy-img"
+                  ></span>
+                  <span class="header__policy-title"
+                    >FREE DELIVERY WORLDWIDE
+                    <span class="header__policy-text">On order over $100</span>
+                  </span>
+                </div>
+                <div
+                  class="
+                    header__content-item
+                    header__content-item--discount
+                    header__content-item--visibility
+                  "
+                >
+                  <span
+                    class="icon-cloud-upload icon icon--m header__policy-img"
+                  ></span>
+                  <span class="header__policy-title">
+                    UP TO 20% OFF COSY LAYERS
+                    <span class="header__policy-text">
+                      Lorem ipsum dolor sit amet
+                    </span>
+                  </span>
+                </div>
+                <div
+                  class="
+                    header__content-item
+                    header__content-item--pros
+                    header__content-item--visibility
+                  "
+                >
+                  <span
+                    class="icon-gift icon icon--m header__policy-img"
+                  ></span>
+                  <span class="header__policy-title">
+                    Buy 1 get 1 free
+                    <span class="header__policy-text">On order over $100</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__menu">
+            <div class="container">
+              <span class="curly-line"></span>
+              <div class="header__menu-inner">
+                <nav class="header__menu-nav">
+                  <div class="header__menu-btn">
+                    <span class="header__menu-line"></span>
+                    <span class="header__menu-line"></span>
+                    <span class="header__menu-line"></span>
+                    <span class="header__menu-line"></span>
+                  </div>
+                  <ul class="menu">
+                    <li class="menu__item">
+                      <a href="index.html" class="menu__link menu__link--red"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="menu__item menu__item-furniture">
+                      <a href="furniture.html" class="menu__link">Furniture </a>
+                      <div class="dropdown dropdown__furniture">
+                        <div class="container">
+                          <div class="dropdown__boxs">
+                            <div class="dropdown__box">
+                              <div class="dropdown__items">
+                                <div class="dropdown__item">
+                                  <p
+                                    class="
+                                      dropdown__title
+                                      dropdown__title--border
+                                      dropdown__title-slideone
+                                    "
+                                  >
+                                    Table
+                                  </p>
+                                  <div
+                                    class="
+                                      dropdown__wrapp dropdown__wrapp-slideone
+                                    "
+                                  >
+                                    <ul class="dropdown__nemu">
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Kitchen & Dining Room Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Folding Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Living Room Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Sofa Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >End Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Coffee Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Pedestal Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Home Office Desks</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="dropdown__item">
+                                  <p
+                                    class="
+                                      dropdown__title
+                                      dropdown__title--border
+                                      dropdown__title-slidetwo
+                                    "
+                                  >
+                                    Table
+                                  </p>
+                                  <div
+                                    class="
+                                      dropdown__wrapp dropdown__wrapp-slidetwo
+                                    "
+                                  >
+                                    <ul class="dropdown__nemu">
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Living Room Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Sofa Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >End Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="coffee-tables.html" class="dropdown__link"
+                                          >Coffee Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Pedestal Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Home Office Desks</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Kids' Furniture</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Kitchen & Dining Room Sets</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <a href="furniture.html" class="dropdowm__items-link">
+                                <img
+                                  src="images/dropdown-1.jpg"
+                                  alt="chairs"
+                                  class="dropdown__img dropdown__img--b"
+                                />
+                              </a>
+                            </div>
+                            <div class="dropdown__box">
+                              <div class="dropdown__items">
+                                <div class="dropdown__item">
+                                  <p
+                                    class="
+                                      dropdown__title
+                                      dropdown__title--border
+                                      dropdown__title-slidethree
+                                    "
+                                  >
+                                    Table
+                                  </p>
+                                  <div
+                                    class="
+                                      dropdown__wrapp dropdown__wrapp-slidethree
+                                    "
+                                  >
+                                    <ul class="dropdown__nemu">
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Kitchen & Dining Room Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Folding Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >End Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="coffee-tables.html" class="dropdown__link"
+                                          >Coffee Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Pedestal Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Home Office Desks</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Kids' Furniture</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Kitchen & Dining Room Sets</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="dropdown__item">
+                                  <p
+                                    class="
+                                      dropdown__title
+                                      dropdown__title--border
+                                      dropdown__title-slidefour
+                                    "
+                                  >
+                                    Table
+                                  </p>
+                                  <div
+                                    class="
+                                      dropdown__wrapp dropdown__wrapp-slidefour
+                                    "
+                                  >
+                                    <ul class="dropdown__nemu">
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Dining Room Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Folding Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Living Room Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Sofa Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >End Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Coffee Tables</a
+                                        >
+                                      </li>
+                                      <li class="dropqown__list">
+                                        <a href="furniture.html" class="dropdown__link"
+                                          >Pedestal Tables</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <a href="furniture.html" class="dropdowm__items-link">
+                                <img
+                                  src="images/dropdown-2.jpg"
+                                  alt=""
+                                  class="dropdown__img dropdown__img--b"
+                                />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <a href="coffee-tables.html" class="menu__link">Coffee tables</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="sofas.html" class="menu__link">Sofas</a>
+                    </li>
+                    <li class="menu__item menu__item-bedroom">
+                      <a href="bedroom-furniture.html" class="menu__link"> Bedroom furniture </a>
+                      <div class="dropdown dropdown__bedroom">
+                        <div class="container">
+                          <div class="dropdown__boxs">
+                            <a href="bedroom-furniture.html" class="dropdowm__items-link">
+                              <img
+                                src="images/dropdown-4.jpeg"
+                                alt="chairs"
+                                class="dropdown__img dropdown__img--m"
+                              />
+                              <p class="dropdown__title">sofa</p>
+                              <p class="dropdown__text">
+                                Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard.
+                              </p>
+                            </a>
+                            <a href="bedroom-furniture.html" class="dropdowm__items-link">
+                              <img
+                                src="images/dropdown-3.jpeg"
+                                alt="chairs"
+                                class="dropdown__img dropdown__img--m"
+                              />
+                              <p class="dropdown__title">chair</p>
+                              <p class="dropdown__text">
+                                Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard.
+                              </p>
+                            </a>
+                            <a href="bedroom-furniture.html" class="dropdowm__items-link">
+                              <img
+                                src="images/dropdown-5.jpeg"
+                                alt="chairs"
+                                class="dropdown__img dropdown__img--m"
+                              />
+                              <p class="dropdown__title">bed</p>
+                              <p class="dropdown__text">
+                                Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard.
+                              </p>
+                            </a>
+                            <a href="bedroom-furniture.html" class="dropdowm__items-link">
+                              <img
+                                src="images/dropdown-6.jpeg"
+                                alt="chairs"
+                                class="dropdown__img dropdown__img--m"
+                              />
+                              <p class="dropdown__title">furniture chest</p>
+                              <p class="dropdown__text">
+                                Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard.
+                              </p>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="menu__item">
+                      <a href="shop.html" class="menu__link">shop</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="blog.html" class="menu__link">blog</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="contact-us.html" class="menu__link">Contact us</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="header__menu-wrap">
+                  <span class="icon-search icon icon--m"></span>
+                  <div class="header__menu-link">
+                    <a href="shopping-cart.html" class="header__cart">
+                      <span
+                        class="icon-shopping-cart icon icon--m icon--active"
+                      ></span>
+                      <span class="header__cart-calc">2</span>
+                      <span class="header__cart-items">( items )</span>
+                    </a>
+                    <div class="dropdown dropdown__cart">
+                      <article class="product dropdown__product">
+                        <div class="product__content dropdown__content">
+                          <a href="product-one.html" class="dropdown__content-link">
+                            <img
+                              class="
+                                product__img product__img--xs
+                                dropdown__content-img
+                              "
+                              src="images/latest-1.jpg"
+                              alt="table"
+                          /></a>
+                          <div class="product__desc dropdown__desc">
+                            <a href="product-one.html" class="title drodown__desc-title">
+                              <h4 class="product-head">Modular Modern</h4>
+                            </a>
+                            <p class="product__price drodown__desc-price">
+                              $ 540.00
+                            </p>
+                          </div>
+                          <span
+                            class="
+                              icon-close icon icon--s
+                              dropdown__product-close
+                            "
+                          ></span>
+                        </div>
+                      </article>
+                      <article class="product dropdown__product">
+                        <div class="product__content dropdown__content">
+                          <a href="product-one.html" class="dropdown__content-link">
+                            <img
+                              class="
+                                product__img product__img--xs
+                                dropdown__content-img
+                              "
+                              src="images/latest-1.jpg"
+                              alt="table"
+                          /></a>
+                          <div class="product__desc dropdown__desc">
+                            <a href="product-one.html" class="title drodown__desc-title">
+                              <h4 class="product-head">Modular Modern</h4>
+                            </a>
+                            <p class="product__price drodown__desc-price">
+                              $ 540.00
+                            </p>
+                          </div>
+                          <span
+                            class="
+                              icon-close icon icon--s
+                              dropdown__product-close
+                            "
+                          ></span>
+                        </div>
+                      </article>
+                      <article class="product dropdown__product">
+                        <div class="product__content dropdown__content">
+                          <a href="product-one.html" class="dropdown__content-link">
+                            <img
+                              class="
+                                product__img product__img--xs
+                                dropdown__content-img
+                              "
+                              src="images/latest-1.jpg"
+                              alt="table"
+                          /></a>
+                          <div class="product__desc dropdown__desc">
+                            <a href="product-one.html" class="title drodown__desc-title">
+                              <h4 class="product-head">Modular Modern</h4>
+                            </a>
+                            <p class="product__price drodown__desc-price">
+                              $ 540.00
+                            </p>
+                          </div>
+                          <span
+                            class="
+                              icon-close icon icon--s
+                              dropdown__product-close
+                            "
+                          ></span>
+                        </div>
+                      </article>
+                      <p class="title dropdown__total">
+                        Total: <span class="dropdown__total-price">$ 1620</span>
+                      </p>
+                      <a href="checkout.html" class="dropdown__product-chekout">
+                        check out
+                      </a>
+                      <a href="shopping-cart.html" class="dropdown__product-cart">
+                        go to cart
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <form class="header__search">
+                <label for="search-1" class="header__search-lbl">
+                  <span class="visually-hidden">Search entire store here</span>
+                </label>
+                <input
+                  class="header__search-input"
+                  id="search-1"
+                  name="header__search"
+                  placeholder="Search entire store here ..."
+                  type="search"
+                  required
+                />
+                <button class="header__search-btn" type="submit">search</button>
+              </form>
+              <span class="curly-line"></span>
+            </div>
+          </div>
+        </header>
+        <main class="main">
+          <div class="breadcrumbs">
+            <div class="container">
+              <ul class="breadcrumbs__menu">
+                <li class="breadcrumbs__list">
+                  <a class="breadcrumbs__link" href="index.html">
+                    <span class="icon-home icon icon--s"></span>
+                  </a>
+                </li>
+                <li class="breadcrumbs__list">
+                  <span class="breadcrumbs__link">Checkout</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <section class="checkout">
+            <div class="container">
+              <div class="checkout__inner">
+                <h2 class="heading checkout__title">Checkout</h2>
+                <div class="checkout__link">
+                  <p class="checkout__link-text">
+                    <span class="icon icon-calendar checkout__link-icon"></span>
+                    <span class="checkout__link-question"
+                      >Returning customer?</span
+                    >
+                    <span class="checkout__link-btn checkout__link-btn--login"
+                      >Click here to login</span
+                    >
+                  </p>
+                  <div class="checkout__login">
+                    <p class="checkout__text">
+                      If you have shopped with us before, please enter your
+                      details below. If you are a new customer, please proceed
+                      to the Billing & Shipping section.
+                    </p>
+                    <form class="login">
+                      <label for="email" class="login__email">
+                        <span class="visually-hidden">Enter email</span>
+                        <input
+                          class="login__input"
+                          id="email"
+                          name="login__email"
+                          type="text"
+                          placeholder="Username or email *"
+                          required
+                        />
+                      </label>
+                      <label for="password-pin" class="login__password">
+                        <span class="visually-hidden">Enter password</span>
+                        <input
+                          class="login__input"
+                          id="password-pin"
+                          name="login__password"
+                          type="text"
+                          placeholder="Password *"
+                          required
+                        />
+                      </label>
+                      <button class="button login__btn" type="submit">
+                        Login
+                      </button>
+                    </form>
+                  </div>
+                  <p class="checkout__link-text">
+                    <span class="icon icon-calendar checkout__link-icon"></span>
+                    <span class="checkout__link-question">Have a coupon?</span>
+                    <span class="checkout__link-btn checkout__link-btn--code"
+                      >Click here to enter your code</span
+                    >
+                  </p>
+                  <div class="checkout__coupon">
+                    <p class="checkout__text">
+                      If you have a coupon code, please apply it below.
+                    </p>
+                    <form class="coupon-form">
+                      <label for="coupon" class="checkout__lbl">
+                        <span class="visually-hidden">Coupon</span>
+                        <input
+                          class="checkout__input"
+                          id="coupon"
+                          name="checkout__coupon"
+                          type="text"
+                          placeholder="Coupon code"
+                          required
+                        />
+                      </label>
+                      <button class="button shopping-cart__btn" type="submit">
+                        Apply Coupon
+                      </button>
+                    </form>
+                  </div>
+                </div>
+                <div class="checkout__requisite">
+                  <p class="checkout__title">BILLING DETAILS</p>
+                  <form class="requisite">
+                    <label for="first-name" class="requisite__first-name">
+                      <span class="visually-hidden">Enter First name</span>
+                      <input
+                        class="requisite__input"
+                        id="first-name"
+                        name="requisite__first-name"
+                        type="text"
+                        placeholder="First name *"
+                        required
+                      />
+                    </label>
+                    <label for="last-name" class="requisite__last-name">
+                      <span class="visually-hidden">Enter Last name</span>
+                      <input
+                        class="requisite__input"
+                        id="last-name"
+                        name="requisite__last-name"
+                        type="text"
+                        placeholder="Last name *"
+                        required
+                      />
+                    </label>
+                    <select class="country">
+                      <option value="AX">AALAND ISLANDS</option>
+                      <option value="AF">AFGHANISTAN</option>
+                      <option value="AL">ALBANIA</option>
+                      <option value="DZ">ALGERIA</option>
+                      <option value="AS">AMERICAN SAMOA</option>
+                      <option value="AD">ANDORRA</option>
+                      <option value="AO">ANGOLA</option>
+                      <option value="AI">ANGUILLA</option>
+                      <option value="AQ">ANTARCTICA</option>
+                      <option value="AG">ANTIGUA AND BARBUDA</option>
+                      <option value="AR">ARGENTINA</option>
+                      <option value="AM">ARMENIA</option>
+                      <option value="AW">ARUBA</option>
+                      <option value="AU">AUSTRALIA</option>
+                      <option value="AT">AUSTRIA</option>
+                      <option value="AZ">AZERBAIJAN</option>
+                      <option value="BS">BAHAMAS</option>
+                      <option value="BH">BAHRAIN</option>
+                      <option value="BD">BANGLADESH</option>
+                      <option value="BB">BARBADOS</option>
+                      <option value="BY">BELARUS</option>
+                      <option value="BE">BELGIUM</option>
+                      <option value="BZ">BELIZE</option>
+                      <option value="BJ">BENIN</option>
+                      <option value="BM">BERMUDA</option>
+                      <option value="BT">BHUTAN</option>
+                      <option value="BO">BOLIVIA</option>
+                      <option value="BA">BOSNIA AND HERZEGOWINA</option>
+                      <option value="BW">BOTSWANA</option>
+                      <option value="BV">BOUVET ISLAND</option>
+                      <option value="BR">BRAZIL</option>
+                      <option value="IO">BRITISH INDIAN OCEAN TERRITORY</option>
+                      <option value="BN">BRUNEI DARUSSALAM</option>
+                      <option value="BG">BULGARIA</option>
+                      <option value="BF">BURKINA FASO</option>
+                      <option value="BI">BURUNDI</option>
+                      <option value="KH">CAMBODIA</option>
+                      <option value="CM">CAMEROON</option>
+                      <option value="CA">CANADA</option>
+                      <option value="CV">CAPE VERDE</option>
+                      <option value="KY">CAYMAN ISLANDS</option>
+                      <option value="CF">CENTRAL AFRICAN REPUBLIC</option>
+                      <option value="TD">CHAD</option>
+                      <option value="CL">CHILE</option>
+                      <option value="CN">CHINA</option>
+                      <option value="CX">CHRISTMAS ISLAND</option>
+                      <option value="CO">COLOMBIA</option>
+                      <option value="KM">COMOROS</option>
+                      <option value="CK">COOK ISLANDS</option>
+                      <option value="CR">COSTA RICA</option>
+                      <option value="CI">COTE D'IVOIRE</option>
+                      <option value="CU">CUBA</option>
+                      <option value="CY">CYPRUS</option>
+                      <option value="CZ">CZECH REPUBLIC</option>
+                      <option value="DK">DENMARK</option>
+                      <option value="DJ">DJIBOUTI</option>
+                      <option value="DM">DOMINICA</option>
+                      <option value="DO">DOMINICAN REPUBLIC</option>
+                      <option value="EC">ECUADOR</option>
+                      <option value="EG">EGYPT</option>
+                      <option value="SV">EL SALVADOR</option>
+                      <option value="GQ">EQUATORIAL GUINEA</option>
+                      <option value="ER">ERITREA</option>
+                      <option value="EE">ESTONIA</option>
+                      <option value="ET">ETHIOPIA</option>
+                      <option value="FO">FAROE ISLANDS</option>
+                      <option value="FJ">FIJI</option>
+                      <option value="FI">FINLAND</option>
+                      <option value="FR">FRANCE</option>
+                      <option value="GF">FRENCH GUIANA</option>
+                      <option value="PF">FRENCH POLYNESIA</option>
+                      <option value="TF">FRENCH SOUTHERN TERRITORIES</option>
+                      <option value="GA">GABON</option>
+                      <option value="GM">GAMBIA</option>
+                      <option value="GE">GEORGIA</option>
+                      <option value="DE">GERMANY</option>
+                      <option value="GH">GHANA</option>
+                      <option value="GI">GIBRALTAR</option>
+                      <option value="GR">GREECE</option>
+                      <option value="GL">GREENLAND</option>
+                      <option value="GD">GRENADA</option>
+                      <option value="GP">GUADELOUPE</option>
+                      <option value="GU">GUAM</option>
+                      <option value="GT">GUATEMALA</option>
+                      <option value="GN">GUINEA</option>
+                      <option value="GW">GUINEA-BISSAU</option>
+                      <option value="GY">GUYANA</option>
+                      <option value="HT">HAITI</option>
+                      <option value="HM">HEARD AND MC DONALD ISLANDS</option>
+                      <option value="HN">HONDURAS</option>
+                      <option value="HK">HONG KONG</option>
+                      <option value="HU">HUNGARY</option>
+                      <option value="IS">ICELAND</option>
+                      <option value="IN">INDIA</option>
+                      <option value="ID">INDONESIA</option>
+                      <option value="IQ">IRAQ</option>
+                      <option value="IE">IRELAND</option>
+                      <option value="IL">ISRAEL</option>
+                      <option value="IT">ITALY</option>
+                      <option value="JM">JAMAICA</option>
+                      <option value="JP">JAPAN</option>
+                      <option value="JO">JORDAN</option>
+                      <option value="KZ">KAZAKHSTAN</option>
+                      <option value="KE">KENYA</option>
+                      <option value="KI">KIRIBATI</option>
+                      <option value="KW">KUWAIT</option>
+                      <option value="KG">KYRGYZSTAN</option>
+                      <option value="LA">
+                        LAO PEOPLE'S DEMOCRATIC REPUBLIC
+                      </option>
+                      <option value="LV">LATVIA</option>
+                      <option value="LB">LEBANON</option>
+                      <option value="LS">LESOTHO</option>
+                      <option value="LR">LIBERIA</option>
+                      <option value="LY">LIBYAN ARAB JAMAHIRIYA</option>
+                      <option value="LI">LIECHTENSTEIN</option>
+                      <option value="LT">LITHUANIA</option>
+                      <option value="LU">LUXEMBOURG</option>
+                      <option value="MO">MACAU</option>
+                      <option value="MG">MADAGASCAR</option>
+                      <option value="MW">MALAWI</option>
+                      <option value="MY">MALAYSIA</option>
+                      <option value="MV">MALDIVES</option>
+                      <option value="ML">MALI</option>
+                      <option value="MT">MALTA</option>
+                      <option value="MH">MARSHALL ISLANDS</option>
+                      <option value="MQ">MARTINIQUE</option>
+                      <option value="MR">MAURITANIA</option>
+                      <option value="MU">MAURITIUS</option>
+                      <option value="YT">MAYOTTE</option>
+                      <option value="MX">MEXICO</option>
+                      <option value="MC">MONACO</option>
+                      <option value="MN">MONGOLIA</option>
+                      <option value="MS">MONTSERRAT</option>
+                      <option value="MA">MOROCCO</option>
+                      <option value="MZ">MOZAMBIQUE</option>
+                      <option value="MM">MYANMAR</option>
+                      <option value="NA">NAMIBIA</option>
+                      <option value="NR">NAURU</option>
+                      <option value="NP">NEPAL</option>
+                      <option value="NL">NETHERLANDS</option>
+                      <option value="AN">NETHERLANDS ANTILLES</option>
+                      <option value="NC">NEW CALEDONIA</option>
+                      <option value="NZ">NEW ZEALAND</option>
+                      <option value="NI">NICARAGUA</option>
+                      <option value="NE">NIGER</option>
+                      <option value="NG">NIGERIA</option>
+                      <option value="NU">NIUE</option>
+                      <option value="NF">NORFOLK ISLAND</option>
+                      <option value="MP">NORTHERN MARIANA ISLANDS</option>
+                      <option value="NO">NORWAY</option>
+                      <option value="OM">OMAN</option>
+                      <option value="PK">PAKISTAN</option>
+                      <option value="PW">PALAU</option>
+                      <option value="PA">PANAMA</option>
+                      <option value="PG">PAPUA NEW GUINEA</option>
+                      <option value="PY">PARAGUAY</option>
+                      <option value="PE">PERU</option>
+                      <option value="PH">PHILIPPINES</option>
+                      <option value="PN">PITCAIRN</option>
+                      <option value="PL">POLAND</option>
+                      <option value="PT">PORTUGAL</option>
+                      <option value="PR">PUERTO RICO</option>
+                      <option value="QA">QATAR</option>
+                      <option value="RE">REUNION</option>
+                      <option value="RO">ROMANIA</option>
+                      <option value="RU">RUSSIAN FEDERATION</option>
+                      <option value="RW">RWANDA</option>
+                      <option value="SH">SAINT HELENA</option>
+                      <option value="KN">SAINT KITTS AND NEVIS</option>
+                      <option value="LC">SAINT LUCIA</option>
+                      <option value="PM">SAINT PIERRE AND MIQUELON</option>
+                      <option value="VC">
+                        SAINT VINCENT AND THE GRENADINES
+                      </option>
+                      <option value="WS">SAMOA</option>
+                      <option value="SM">SAN MARINO</option>
+                      <option value="ST">SAO TOME AND PRINCIPE</option>
+                      <option value="SA">SAUDI ARABIA</option>
+                      <option value="SN">SENEGAL</option>
+                      <option value="CS">SERBIA AND MONTENEGRO</option>
+                      <option value="SC">SEYCHELLES</option>
+                      <option value="SL">SIERRA LEONE</option>
+                      <option value="SG">SINGAPORE</option>
+                      <option value="SK">SLOVAKIA</option>
+                      <option value="SI">SLOVENIA</option>
+                      <option value="SB">SOLOMON ISLANDS</option>
+                      <option value="SO">SOMALIA</option>
+                      <option value="ZA">SOUTH AFRICA</option>
+                      <option value="GS">
+                        SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS
+                      </option>
+                      <option value="ES">SPAIN</option>
+                      <option value="LK">SRI LANKA</option>
+                      <option value="SD">SUDAN</option>
+                      <option value="SR">SURINAME</option>
+                      <option value="SJ">SVALBARD AND JAN MAYEN ISLANDS</option>
+                      <option value="SZ">SWAZILAND</option>
+                      <option value="SE">SWEDEN</option>
+                      <option value="CH">SWITZERLAND</option>
+                      <option value="SY">SYRIAN ARAB REPUBLIC</option>
+                      <option value="TW">TAIWAN</option>
+                      <option value="TJ">TAJIKISTAN</option>
+                      <option value="TH">THAILAND</option>
+                      <option value="TL">TIMOR-LESTE</option>
+                      <option value="TG">TOGO</option>
+                      <option value="TK">TOKELAU</option>
+                      <option value="TO">TONGA</option>
+                      <option value="TT">TRINIDAD AND TOBAGO</option>
+                      <option value="TN">TUNISIA</option>
+                      <option value="TR">TURKEY</option>
+                      <option value="TM">TURKMENISTAN</option>
+                      <option value="TC">TURKS AND CAICOS ISLANDS</option>
+                      <option value="TV">TUVALU</option>
+                      <option value="UG">UGANDA</option>
+                      <option selected value="UA">UKRAINE</option>
+                      <option value="AE">UNITED ARAB EMIRATES</option>
+                      <option value="GB">UNITED KINGDOM</option>
+                      <option value="US">UNITED STATES</option>
+                      <option value="UM">
+                        UNITED STATES MINOR OUTLYING ISLANDS
+                      </option>
+                      <option value="UY">URUGUAY</option>
+                      <option value="UZ">UZBEKISTAN</option>
+                      <option value="VU">VANUATU</option>
+                      <option value="VE">VENEZUELA</option>
+                      <option value="VN">VIET NAM</option>
+                      <option value="WF">WALLIS AND FUTUNA ISLANDS</option>
+                      <option value="EH">WESTERN SAHARA</option>
+                      <option value="YE">YEMEN</option>
+                      <option value="ZM">ZAMBIA</option>
+                      <option value="ZW">ZIMBABWE</option>
+                    </select>
+                    <label
+                      for="street-address"
+                      class="requisite__street-address"
+                    >
+                      <span class="visually-hidden">Enter Street address</span>
+                      <input
+                        class="requisite__input"
+                        id="street-address"
+                        name="requisite__street-address"
+                        type="text"
+                        placeholder="Street address(house number and street name) *"
+                        required
+                      />
+                    </label>
+                    <label for="town" class="requisite__town">
+                      <span class="visually-hidden">Enter Town</span>
+                      <input
+                        class="requisite__input "
+                        id="town"
+                        name="requisite__town"
+                        type="text"
+                        placeholder="Town/ City *"
+                        required
+                      />
+                    </label>
+                    <label for="state" class="requisite__state">
+                      <span class="visually-hidden">Enter State</span>
+                      <input
+                        class="requisite__input"
+                        id="state"
+                        name="requisite__state"
+                        type="text"
+                        placeholder="State/ County *"
+                        required
+                      />
+                    </label>
+                    <label for="postcode" class="requisite__postcode">
+                      <span class="visually-hidden">Enter postcode</span>
+                      <input
+                        class="requisite__input"
+                        id="postcode"
+                        name="requisite__postcode"
+                        type="text"
+                        placeholder="Postcode / ZIP *"
+                        required
+                      />
+                    </label>
+                    <label for="phone" class="requisite__phone">
+                      <span class="visually-hidden">Enter phone</span>
+                      <input
+                        class="requisite__input"
+                        id="phone"
+                        name="requisite__phone"
+                        type="text"
+                        placeholder="phone *"
+                        required
+                      />
+                    </label>
+                    <label for="email-address" class="requisite__email">
+                      <span class="visually-hidden">Enter email</span>
+                      <input
+                        class="requisite__input"
+                        id="email-address"
+                        name="requisite__email"
+                        type="text"
+                        placeholder="Email address *"
+                        required
+                      />
+                    </label>
+                    <label for="create-account" class="checkout__link-btn checkout__link-btn--password">
+                      <span class="visually-hidden">Create an account</span>
+                      <input class="create-account__input" id="create-account" type="checkbox" name="checkbox">Create an account?
+                    </label>                    
+                  </form>
+                </div>
+                <div class="checkout__order">
+                  <p class="checkout__title">YOUR ORDER</p>
+                  <form class="shopping-cart__form">
+                    <table class="shopping-cart__table">
+                      <tbody class="shopping-cart__items">
+                        <tr class="shopping-cart__item">
+                          <th class="shopping-cart__th">Subtotal</th>
+                          <td class="product-price">
+                            <span class="product__price"> $ 540.00 </span>
+                          </td>
+                        </tr>
+                        <tr class="shopping-cart__item">
+                          <th class="shopping-cart__th">Shipping</th>
+                          <td class="shopping-cart__shipping">
+                            <div class="shopping-cart__list">
+                              <label for="radio-1" class="shopping-cart__list-item">
+                                <span class="visually-hidden">Free Shipping</span>
+                                <input class="shopping-cart__list-input" id="radio-1" type="radio" name="radio" value="1">Free Shipping
+                              </label>
+                              <label for="radio-2" class="shopping-cart__list-item">
+                                <span class="visually-hidden">Local Delivery</span>
+                                <input class="shopping-cart__list-input" id="radio-2" type="radio" name="radio" value="2">Local Delivery
+                              </label>
+                              <label for="radio-3" class="shopping-cart__list-item">
+                                <span class="visually-hidden">Local Pickup</span>
+                                <input class="shopping-cart__list-input" id="radio-3" type="radio" name="radio" value="3">Local Pickup
+                              </label>
+                            </div>                      
+                          </td>
+                        </tr>
+                        <tr class="shopping-cart__item">
+                          <th class="shopping-cart__th">Total</th>
+                          <td class="product-price">
+                            <span class="product__price"> $ 540.00 </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>                    
+                  </form>
+                </div>                
+                <button class="button checkout__btn" type="submit">
+                  Place order
+                </button>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="container">
+            <div class="footer__inner">
+              <div class="footer__contacts">
+                <p class="footer__title">Contact us</p>
+                <address class="footer__address">
+                  <div class="footer__item footer__connection">
+                    <span
+                      class="icon icon-home footer__icon footer__icon--addr"
+                    ></span>
+                    <a href="https://goo.gl/maps/WQdTkQ76BVUNDVsH9" target="_blank" class="footer__text"
+                      >8888 South Avenue Street, New York</a
+                    >
+                  </div>
+                  <div class="footer__item footer__connection">
+                    <span
+                      class="icon icon-phone footer__icon footer__icon--phone"
+                    ></span>
+                    <a class="footer__text" href="tel:1234567896"
+                      >(12) 3 456 7896</a
+                    >
+                    <a class="footer__text" href="tel:1234567895"
+                      >(12) 3 456 7895</a
+                    >
+                  </div>
+                  <div class="footer__item footer__connection">
+                    <span
+                      class="icon icon-envelope footer__icon footer__icon--mail"
+                    ></span>
+                    <a class="footer__text" href="mailto:contact@simen.com"
+                      >contact@simen.com</a
+                    >
+                    <a class="footer__text" href="mailto:info@simen.com"
+                      >info@simen.com</a
+                    >
+                  </div>
+                </address>
+              </div>
+              <div class="footer__service footer__col">
+                <p class="footer__title">Service</p>
+                <ul class="footer__menu">
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Prices & Currencies</a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Secure Payment</a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Delivery Times & Costs</a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Returns & Exchanges</a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">FAQ's</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__account footer__col">
+                <p class="footer__title">account</p>
+                <ul class="footer__menu">
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">My account</a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Wishlist </a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Order history</a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Specials</a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Gift vouchers</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__info footer__col">
+                <p class="footer__title">information</p>
+                <ul class="footer__menu">
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">My account</a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Wishlist </a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Order history</a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Specials</a>
+                  </li>
+                  <li class="footer__list">
+                    <a class="footer__link" href="#">Gift vouchers</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__newslette footer__col">
+                <p class="footer__title">Newsletter</p>
+                <p class="footer__email">Register your email for news</p>
+                <form class="footer__subscribe">
+                  <label for="subscribe" class="footer__subscribe-lbl">
+                    <span class="visually-hidden">Enter email</span>
+                  </label>
+                  <input
+                    class="footer__subscribe-input"
+                    id="subscribe"
+                    name="footer__subscribe"
+                    type="text"
+                    placeholder="Your email here"
+                    required
+                  />
+                  <button class="footer__subscribe-btn" type="submit">
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="footer__bottom-inner">
+              <p class="footer__bottom-text">
+                © 2015 Magento Demo Store. All Rights Reserved. Developed by
+                SNSTheme.Com
+              </p>
+              <div class="footer__bottom-peyment">
+                <img
+                  class="footer__bottom-img"
+                  src="images/paypal.png"
+                  alt="PeyPal"
+                />
+                <img
+                  class="footer__bottom-img"
+                  src="images/mastercard.png"
+                  alt="MasterCard"
+                />
+                <img
+                  class="footer__bottom-img"
+                  src="images/maestro.png"
+                  alt="Maestro"
+                />
+                <img
+                  class="footer__bottom-img"
+                  src="images/visa.png"
+                  alt="Visa"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
